@@ -1,3 +1,7 @@
+.home-container {
+    row-gap: 7rem;
+}
+
 .home-content {
     grid-template-columns: 116px repeat(2, 1fr);
     padding-top: 5.5rem;
@@ -78,5 +82,114 @@
 
     100% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.home-scroll {
+    margin-left: 9.25rem;
+}
+
+.wheel {
+    animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(3.75rem);
+    }
+}
+
+.home-scroll-name {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+    margin-left: 2px;
+}
+
+.home-scroll-arrow {
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .home-content {
+        grid-template-columns: 10px repeat(2, 1fr);
+        column-gap: 1.25rem;
+    }
+
+    .home-hand {
+        width: 26px;
+        height: 26px;
+    }
+
+    .home-subtitle {
+        padding-left: 3.75rem;
+        margin-bottom: var(--mb-1);
+    }
+
+    .home-subtitle::before {
+        width: 42px;
+        top: 0.8rem;
+    }
+
+    .home-description {
+        max-width: initial;
+        margin-bottom: var(--mb-2-5);
+    }
+
+    .home-img {
+        height: 250px;
+        width: 250px;
+        box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
+    }
+
+    .home-scroll {
+        margin-left: 7.5rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .home-content {
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 3.5rem;
+    }
+
+    .home-img {
+        order: initial;
+        justify-self: initial;
+    }
+
+    .home-data {
+        grid-column: 1/3;
+    }
+
+    .home-img {
+        width: 200px;
+        height: 200px;
+        box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+    }
+
+    .home-scroll {
+        display: none;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .home-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .home-hand {
+        width: 22px;
+        height: 22px;
     }
 }

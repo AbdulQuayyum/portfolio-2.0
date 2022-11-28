@@ -1,0 +1,112 @@
+.skills-container {
+    grid-template-columns: repeat(3, 410px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.skills-content {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+}
+
+.skills-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+
+.skills-box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.skills-group {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+.skills-group-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-data {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.skills-icon {
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+.skills-name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+
+.skills-level {
+    font-size: var(--tiny-font-size);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .skills-container {
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 1344px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 400px);
+    }
+    .skills-content {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .skills-container {
+        grid-template-columns: repeat(1, 400px);
+    }
+
+    .skills-content {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-box {
+        display: grid;
+        grid-template-columns: repeat(2);
+    }
+
+    /* .skills-data {
+display: grid;
+grid-column-start: 2;
+    } */
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .skills-box {
+        column-gap: 1.25rem;
+    }
+
+    .skills-name {
+        font-size: var(--small-font-size);
+    }
+}
