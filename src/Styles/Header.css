@@ -21,6 +21,10 @@
     font-weight: var(--font-medium)
 }
 
+.nav-logo img {
+    height: 70px;
+}
+
 .nav-list {
     display: flex;
     column-gap: 2rem;
@@ -47,6 +51,10 @@
     color: var(--title-color-dark);
 }
 
+.scroll-header {
+    box-shadow:  0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
 /*=============== BREAKPOINTS ===============*/
 
 /* For medium devices */
@@ -54,6 +62,10 @@
     .header {
         top: initial;
         bottom: 0;
+    }
+
+    .nav-logo img {
+        height: 40px;
     }
 
     .nav {

@@ -3,7 +3,7 @@ import Layout from '../Layout/Layout'
 
 const Index = () => {
     return (
-        <Layout>Index</Layout>
+        <Layout></Layout>
     )
 }
 

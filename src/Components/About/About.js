@@ -5,7 +5,7 @@ import Info from './Info'
 
 const About = () => {
   return (
-    <section className='about section' id="about">
+    <section className='about section' id="About">
       <h2 className="section-title">
         About Me
       </h2>
@@ -17,9 +17,9 @@ const About = () => {
         <div className="about-data">
           <Info />
           <p className="about-description">
-          Software engineer using JavaScript || TypeScript || React.Js || Next.Js || Vue.Js || Express.Js || Next.Js || Three.Js || Python || Flutter || Dart || React-Native Technologies to solve problems.
+         I am Abdul-Quayyum, a Software Engineer using JavaScript || TypeScript || React.Js || Next.Js || Vue.Js || Express.Js || Next.Js || Three.Js || Python || Flutter || Dart || React-Native Technologies to solve problems.
           </p>
-          <a download="" href={resume} className="button button-flex">
+          <a download="Abdul-Quayyum's Resume" href={resume} className="button button-flex">
             Check out my CV
             <svg
                 className="button-icon"

@@ -1,13 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Data = () => {
+  const [loop, setLoop] = useState(0)
+  const [deleting, setDeleting] = useState(false)
+  const changingTexts = ["Frontend Engineer", "Backend Engineer", "Mobile Engineer", "Software Engineer"]
+  const [text, setText] = useState("")
+  const [delta, setDelta] = useState(300 - Math.random() * 100)
+  const [index, setIndex] = useState(1);
+  const period = 2000
+
+  useEffect(() => {
+      let ticker = setInterval(() => {
+          tick()
+      }, delta)
+      return () => { clearInterval(ticker) }
+  }, [text])
+
+  const tick = () => {
+      let i = loop % changingTexts.length
+      let fullText = changingTexts[i]
+      let updatedText = deleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1)
+
+      setText(updatedText)
+      if (deleting) {
+          setDelta(prevDelta => prevDelta /2)
+      }
+
+      if (!deleting && updatedText === fullText) {
+          setDeleting(true)
+      setIndex(prevIndex => prevIndex - 1);
+          setDelta(period)
+      } else if (deleting && updatedText === "") {
+          setDeleting(false)
+          setLoop(loop + 1)
+          setIndex(1);
+          setDelta(500)
+        } else {
+          setIndex(prevIndex => prevIndex + 1);
+        }
+  }
   return (
     <div className="home-data">
       <h1 className="home-title">
         Heyy
-         I am
+         {/* I am
         <br />
-        Abdul-Quayyum
+        Abdul-Quayyum */}
         <svg
           width="36"
           height="36"
@@ -59,13 +97,13 @@ const Data = () => {
         </svg>
       </h1>
       <h3 className="home-subtitle">
-        Software Engineer
+       I'm Abdul-Quayyum, a {text}
       </h3>
       <p className="home-description">
         I am an efficient Software Engineer, and I am very passionate and dedicated to my work.
       </p>
-      <a href="#contact" id="contact" className='button button-flex'>
-        Drop an Heyyy
+      <a href="#Contact" id="contact" className='button button-flex'>
+        Drop a message
         <svg
           className="button-icon"
           xmlns="http://www.w3.org/2000/svg"

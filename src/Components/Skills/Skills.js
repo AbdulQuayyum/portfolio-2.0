@@ -5,7 +5,7 @@ import Mobile from './Mobile'
 
 const Skills = () => {
     return (
-        <section className="skills section" id="skills">
+        <section className="skills section" id="Skills">
             <h2 className="section-title">
                 Skills
             </h2>

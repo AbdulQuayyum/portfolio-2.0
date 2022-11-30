@@ -4,7 +4,7 @@ import { BsArrowDownShort } from "react-icons/bs"
 const ScrollDown = () => {
     return (
         <div className='home-scroll'>
-            <a href="#about" className="home-scroll-button button-flex">
+            <a href="#About" className="home-scroll-button button-flex">
                 <svg
                     width="32px"
                     height="32px"
