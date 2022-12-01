@@ -5,7 +5,8 @@
 }
 
 .about-img {
-    width: 350px;
+    height: 350px;
+    width: 300px;
     border-radius: 1rem;
     justify-self: center;
 }
@@ -55,6 +56,7 @@
     }
 
     .about-img {
+        height: auto;
         width: 220px;
     }
 
@@ -76,9 +78,14 @@
     }
 }
 
+
+@media screen and (max-width: 992px) {
+    .about-img {}
+}
+
 @media screen and (max-width: 576px) {
     .about-info {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .about-description {
@@ -89,6 +96,9 @@
 /* For small devices */
 @media screen and (max-width: 350px) {
     .about-info {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, max-content);
+    }
+    .about-box {
+        padding: 0.75rem 1.5rem;
     }
 }

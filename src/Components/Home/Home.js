@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Data from './Data'
 import ScrollDown from './ScrollDown'
-import Social from './Social'
 
 const Home = () => {
 
@@ -9,9 +8,12 @@ const Home = () => {
         <section className="home section" id="Home">
             <div className="home-container container grid">
                 <div className="home-content grid">
-                    <Social />
-                    <div className="home-img"></div>
-                    <Data />
+                    <div className="home-content-1">
+                        <Data />
+                    </div>
+                    <div className="home-content-2">
+                        <div className="home-img"></div>
+                    </div>
                 </div>
                 <ScrollDown />
             </div>

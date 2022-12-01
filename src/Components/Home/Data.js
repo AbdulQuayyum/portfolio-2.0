@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Social from './Social'
 
 const Data = () => {
   const [loop, setLoop] = useState(0)
@@ -102,7 +103,7 @@ const Data = () => {
       <p className="home-description">
         I am an efficient Software Engineer, and I am very passionate and dedicated to my work.
       </p>
-      <a href="#Contact" id="contact" className='button button-flex'>
+      {/* <a href="#Contact" id="contact" className='button button-flex'>
         Drop a message
         <svg
           className="button-icon"
@@ -121,7 +122,8 @@ const Data = () => {
             fill="var(--container-color)"
           ></path>
         </svg>
-      </a>
+      </a> */}
+      <Social />
     </div>
   )
 }

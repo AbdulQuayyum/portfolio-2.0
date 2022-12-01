@@ -13,7 +13,8 @@ const About = () => {
         My Introduction
       </span>
       <div className="about-container container grid">
-        <img src={profile} alt="..." className='about-img' />
+      <div className="home-img"></div>
+        {/* <img src={profile} alt="..." className='about-img' /> */}
         <div className="about-data">
           <Info />
           <p className="about-description">

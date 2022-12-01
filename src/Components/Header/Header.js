@@ -24,12 +24,13 @@ const Header = () => {
                 <a href="/" className="nav-logo">
                     <img src={abdulquayyum} alt="..." />
                 </a>
-                <div className={Toggle ? "nav-menu show-menu" : "nav-menu"}>
+                <div className={Toggle ? "nav-menu show-menu " : "nav-menu"}>
+                    < IoClose className="nav-close" onClick={() => ShowMenu(!Toggle)} />
                     <ul className="nav-list grid">
                         <li className="nav-item">
                             <a href="#Home" onClick={() => setActiveNav("#Home")} className={activeNav === "#Home" ? "nav-link active-link" : "nav-link"}>
                                 <TbHome className='nav-icon' />
-                                Home
+                               <span>Home</span>
                             </a>
                         </li>
                         <li className="nav-item">
@@ -63,7 +64,6 @@ const Header = () => {
                             </a>
                         </li>
                     </ul>
-                    < IoClose className="nav-close" onClick={() => ShowMenu(!Toggle)} />
                 </div>
                 <div className="nav-toggle" onClick={() => ShowMenu(!Toggle)}>
                     < MdSegment />

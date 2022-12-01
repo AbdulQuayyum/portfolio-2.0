@@ -4,6 +4,7 @@ import Contact from "../Components/Contact/Contact";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import Home from "../Components/Home/Home";
+import Projects from "../Components/Projects/Projects";
 import Qualification from "../Components/Qualification/Qualification";
 import Services from "../Components/Services/Services";
 import Skills from "../Components/Skills/Skills";
@@ -19,6 +20,7 @@ export default function Layout(props) {
                 <About />
                 <Skills />
                 <Services />
+                <Projects />
                 <Qualification />
                 <Testimonials />
                 <Contact />
