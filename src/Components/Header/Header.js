@@ -52,9 +52,9 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#Portfolio" onClick={() => setActiveNav("#Portfolio")} className={activeNav === "#Portfolio" ? "nav-link active-link" : "nav-link"}>
+                            <a href="#Projects" onClick={() => setActiveNav("#Projects")} className={activeNav === "#Projects" ? "nav-link active-link" : "nav-link"}>
                                 <CgFileDocument className='nav-icon' />
-                                Portfolio
+                                Projects
                             </a>
                         </li>
                         <li className="nav-item">
