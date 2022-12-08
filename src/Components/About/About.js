@@ -10,7 +10,7 @@ const About = () => {
         About Me
       </h2>
       <span className="section-subtitle">
-        My Introduction
+       Who is Abdul-Quayyum?
       </span>
       <div className="about-container container grid">
       <div className="home-img"></div>
@@ -18,7 +18,7 @@ const About = () => {
         <div className="about-data">
           <Info />
           <p className="about-description">
-         I am Abdul-Quayyum, a Software Engineer using JavaScript || TypeScript || React.Js || Next.Js || Vue.Js || Express.Js || Next.Js || Three.Js || Python || Flutter || Dart || React-Native Technologies to solve problems.
+         I am a Software Engineer using JavaScript || TypeScript || React.Js || Next.Js || Vue.Js || Express.Js || Next.Js || Three.Js || Python || Flutter || Dart || React-Native Technologies to solve problems.
           </p>
           <a download="Abdul-Quayyum's Resume" href={resume} className="button button-flex">
             Check out my CV

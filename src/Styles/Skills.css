@@ -37,6 +37,7 @@
 
 .skills-data {
     display: flex;
+    flex-direction: column;
     column-gap: 0.5rem;
 }
 
@@ -55,6 +56,68 @@
     font-size: var(--tiny-font-size);
 }
 
+.progress-parent {
+    margin: 5px 0 10px 0;
+    width: 100%;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    height: 0.3rem;
+}
+
+.progress-bar-basic {
+    height: 0.3rem;
+    background-color: var(--text-color);
+    border-radius: 9999px;
+    width: 40%;
+    animation: dude 4s linear forwards;
+}
+
+.progress-bar-intermediate {
+    height: 0.3rem;
+    background-color: var(--text-color);
+    border-radius: 9999px;
+    width: 70%;
+    animation: dude 4s linear forwards;
+}
+
+.progress-bar-advanced {
+    height: 0.3rem;
+    background-color: var(--text-color);
+    border-radius: 9999px;
+    width: 90%;
+    animation: dude3 4s linear forwards;
+}
+
+@keyframes dude {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes dude2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes dude3 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -69,6 +132,7 @@
     .skills-container {
         grid-template-columns: repeat(2, 400px);
     }
+
     .skills-content {
         padding: 1.5rem;
     }

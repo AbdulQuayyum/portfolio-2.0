@@ -19,7 +19,7 @@ const Services = () => {
         Services
       </h2>
       <span className="section-subtitle">
-        What I offer
+        What does Abdul-Quayyum offer?
       </span>
       <div className="services-container container grid">
         <div className="services-content">
@@ -81,25 +81,25 @@ const Services = () => {
                 Backend Engineer
               </h3>
               <p className="services-modal-description">
-                Providing quality service for clients and companies, with more than 2 years of experience
+                Providing quality service for clients and companies, with more than 1 year of experience
               </p>
               <ul className="services-modal-services grid">
                 <li className="services-modal-service">
                   < BsPatchCheck className='services-modal-icon' />
                   <p className="services-modal-info">
-                    I Develop and maintain the UI.
+                  I implement algorithms and solve system related problems.
                   </p>
                 </li>
                 <li className="services-modal-service">
                   < BsPatchCheck className='services-modal-icon' />
                   <p className="services-modal-info">
-                    i create UX element interactions.
+                    I manage APIs resources which work across devices.
                   </p>
                 </li>
                 <li className="services-modal-service">
                   < BsPatchCheck className='services-modal-icon' />
                   <p className="services-modal-info">
-                    I fix bugs and test the project for usability
+                    I strore data and ensure that it is displayed to the right users.
                   </p>
                 </li>
               </ul>
@@ -123,7 +123,7 @@ const Services = () => {
                 Mobile Engineer
               </h3>
               <p className="services-modal-description">
-                Providing quality service for clients and companies, with more than 2 years of experience
+                Providing quality service for clients and companies, with nearly 1 year of experience
               </p>
               <ul className="services-modal-services grid">
                 <li className="services-modal-service">
@@ -141,7 +141,7 @@ const Services = () => {
                 <li className="services-modal-service">
                   < BsPatchCheck className='services-modal-icon' />
                   <p className="services-modal-info">
-                    I fix bugs and test the project for usability
+                    I create cross platform applications
                   </p>
                 </li>
               </ul>

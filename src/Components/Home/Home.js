@@ -1,6 +1,7 @@
 import React from 'react'
 import Data from './Data'
 import ScrollDown from './ScrollDown'
+import gig from "../../Assets/Images/gig.png"
 
 const Home = () => {
 
@@ -12,10 +13,11 @@ const Home = () => {
                         <Data />
                     </div>
                     <div className="home-content-2">
-                        <div className="home-img"></div>
+                        <img src={gig} className="gig" alt="..." />
+                        {/* <div className="home-img"></div> */}
                     </div>
                 </div>
-                <ScrollDown />
+                {/* <ScrollDown /> */}
             </div>
         </section>
     )

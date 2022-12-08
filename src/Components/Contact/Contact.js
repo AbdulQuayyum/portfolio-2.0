@@ -39,8 +39,8 @@ const Contact = (props) => {
 
   return (
     <section className="contact section" id="Contact">
-      <h2 className="section-title">Let's connect</h2>
-      <span className="section-subtitle">Contact Me</span>
+      <h2 className="section-title">Contact me</h2>
+      <span className="section-subtitle">Impressed or have feedbacks? send me a message</span>
 
       <div className="contact-container container grid">
         <div className="contact-content">
@@ -73,7 +73,7 @@ const Contact = (props) => {
           </div>
         </div>
         <div className="contact-content">
-          <h3 className='contact-title'>Let's get in touch</h3>
+          <h3 className='contact-title'>Send a quick message</h3>
           <form className="contact-form" ref={form} onSubmit={handleSubmit}>
             <div className="contact-form-div">
               <label htmlFor="" className="contact-form-tag">Name</label>
