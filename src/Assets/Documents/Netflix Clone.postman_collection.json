@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "eef2be43-b42d-44d4-881c-e3f852a9f097",
+		"name": "Netflix Clone",
+		"description": "An API service for a Netflix clone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19586111"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer 123kcdo1232o3j13",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"quayyum@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8800/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Qwerty10\",\r\n    \"email\": \"Qwerty10@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8800/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Authentication API service for a netflix clone"
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer 123kcdo1232o3j13",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"quayyum@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMmQxNGQxOTk0ZDBmYWVlNTg1MDNjNyIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2NDcxNTc3MzYsImV4cCI6MTY0NzU4OTczNn0.ApqyCyYJoAypDZ1rAd6Q9fgEA4HKS29sW6MGI33VEi4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Quayydev\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/api/Users/622d14d1994d0faee585037\n",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"Users",
+						"622d14d1994d0faee585037\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/api/Users/stats",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMmQxNGQxOTk0ZDBmYWVlNTg1MDNjNyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0NzE2MDQ5MCwiZXhwIjoxNjQ3NTkyNDkwfQ.tEV7OMmYIPxQg7RWvkLXaVPnqhC8oJ-0L9YnXdAJgBc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8800/api/Users/stats",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"Users",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/api/movies/random",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMmQxNGQxOTk0ZDBmYWVlNTg1MDNjNyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0NzE5OTUxNCwiZXhwIjoxNjQ3NjMxNTE0fQ.1m9ZXQBxrEYg2q-WfYkl8VY_PE5JtlhiR17069kbJNI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Flash 10\",\r\n    \"desc\": \"test desc\",\r\n    \"img\": \"https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500\",\r\n    \"imgTitle\": \"https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500\",\r\n    \"imgSn\":\"https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500\",\r\n    \"trailer\": \"https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761\",\r\n    \"video\": \"https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761\",\r\n    \"year\" : \"2000\",\r\n    \"limit\": \"16\",\r\n    \"genre\": \"comedy\",\r\n    \"isSeries\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/api/movies/random",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"movies",
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/api/Users/622da8deb6df975f72e282eb",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMmQxNGQxOTk0ZDBmYWVlNTg1MDNjNyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0NzE2MDA2MywiZXhwIjoxNjQ3NTkyMDYzfQ.d-Oj3AKVZ2pgHF2NSwS58BkOG2OE3-ZyTCmWuXQgnE8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8800/api/Users/622da8deb6df975f72e282eb",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"Users",
+						"622da8deb6df975f72e282eb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8800/api/lists?types=series ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMmQxNGQxOTk0ZDBmYWVlNTg1MDNjNyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY0NzIwMDE1MCwiZXhwIjoxNjQ3NjMyMTUwfQ.hDMUbEyWR2PscgQoYA3ujY3CqUTF3kXycwfbAk96fag",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Animes\",\r\n    \"type\": \"series\",\r\n    \"genre\": \"Anime\",\r\n    \"content\": [\r\n         \"622e453bf127d0dcac8bb1ee\",\r\n         \"622e453bf127d0dcac8bb1ee\",\r\n         \"622e453bf127d0dcac8bb1ee\",\r\n         \"622e453bf127d0dcac8bb1ee\",\r\n         \"622e453bf127d0dcac8bb1ee\",\r\n         \"622e453bf127d0dcac8bb1ee\",\r\n         \"622e453bf127d0dcac8bb1ee\",\r\n         \"622e453bf127d0dcac8bb1ee\",\r\n         \"622e453bf127d0dcac8bb1ee\",\r\n         \"622e453bf127d0dcac8bb1ee\"\r\n          ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8800/api/lists?types=series ",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "types",
+							"value": "series "
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

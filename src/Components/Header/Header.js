@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { TbHome, TbBriefcase, TbCode } from "react-icons/tb"
+import { TbHome, TbBriefcase, TbCode, TbMessageCircle } from "react-icons/tb"
 import { FaRegUser } from "react-icons/fa"
 import { IoClose } from "react-icons/io5"
-import { GrSend } from "react-icons/gr"
 import { MdSegment } from "react-icons/md"
 import { CgFileDocument } from "react-icons/cg"
+import Toggler from '../Theme/ThemeToggle'
 import abdulquayyum from "../../Assets/Images/abdulquayyum.png"
 
 // import { Link } from "react-router-dom";
@@ -19,54 +19,57 @@ const Header = () => {
     const [Toggle, ShowMenu] = useState(false)
     const [activeNav, setActiveNav] = useState("#Home")
     return (
-        <header className="header">
-            <nav className="nav container">
+        <header className="main-header dark:bg-[#354358]">
+            <nav className="nav main-container">
                 <a href="/" className="nav-logo">
                     <img src={abdulquayyum} alt="..." />
                 </a>
-                <div className={Toggle ? "nav-menu show-menu " : "nav-menu"}>
-                    < IoClose className="nav-close" onClick={() => ShowMenu(!Toggle)} />
-                    <ul className="nav-list grid">
+                <div className={Toggle ? "nav-menu show-menu dark:bg-[#354358] " : "nav-menu"}>
+                    < IoClose className="nav-close dark:text-[#fff] dark:hover:text-gray-300" onClick={() => ShowMenu(!Toggle)} />
+                    <ul className="nav-list main-grid dark:bg-[#354358]">
                         <li className="nav-item">
-                            <a href="#Home" onClick={() => setActiveNav("#Home")} className={activeNav === "#Home" ? "nav-link active-link" : "nav-link"}>
+                            <a href="#Home" onClick={() => setActiveNav("#Home")} className={activeNav === "#Home" ? "dark:text-[#fff] nav-link active-link dark:hover:text-gray-300" : "dark:text-[#fff] nav-link dark:hover:text-gray-300"}>
                                 <TbHome className='nav-icon' />
-                               <span>Home</span>
+                                <span>Home</span>
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#About" onClick={() => setActiveNav("#About")} className={activeNav === "#About" ? "nav-link active-link" : "nav-link"}>
+                            <a href="#About" onClick={() => setActiveNav("#About")} className={activeNav === "#About" ? "dark:text-[#fff] nav-link active-link dark:hover:text-gray-300" : "dark:text-[#fff] nav-link dark:hover:text-gray-300"}>
                                 <FaRegUser className='nav-icon' />
                                 About
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#Skills" onClick={() => setActiveNav("#Skills")} className={activeNav === "#Skills" ? "nav-link active-link" : "nav-link"}>
+                            <a href="#Skills" onClick={() => setActiveNav("#Skills")} className={activeNav === "#Skills" ? "dark:text-[#fff] nav-link active-link dark:hover:text-gray-300" : "dark:text-[#fff] nav-link dark:hover:text-gray-300"}>
                                 <TbCode className='nav-icon' />
                                 Skills
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#Services" onClick={() => setActiveNav("#Services")} className={activeNav === "#Services" ? "nav-link active-link" : "nav-link"}>
+                            <a href="#Services" onClick={() => setActiveNav("#Services")} className={activeNav === "#Services" ? "dark:text-[#fff] nav-link active-link dark:hover:text-gray-300" : "dark:text-[#fff] nav-link dark:hover:text-gray-300"}>
                                 <TbBriefcase className='nav-icon' />
                                 Services
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#Projects" onClick={() => setActiveNav("#Projects")} className={activeNav === "#Projects" ? "nav-link active-link" : "nav-link"}>
+                            <a href="#Projects" onClick={() => setActiveNav("#Projects")} className={activeNav === "#Projects" ? "dark:text-[#fff] nav-link active-link dark:hover:text-gray-300" : "dark:text-[#fff] nav-link dark:hover:text-gray-300"}>
                                 <CgFileDocument className='nav-icon' />
                                 Projects
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="#Contact" onClick={() => setActiveNav("#Contact")} className={activeNav === "#Contact" ? "nav-link active-link" : "nav-link"}>
-                                <GrSend className='nav-icon' />
+                            <a href="#Contact" onClick={() => setActiveNav("#Contact")} className={activeNav === "#Contact" ? "dark:text-[#fff] nav-link active-link dark:hover:text-gray-300" : "dark:text-[#fff] nav-link dark:hover:text-gray-300"}>
+                                <TbMessageCircle className='nav-icon' />
                                 Contact
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div className="nav-toggle" onClick={() => ShowMenu(!Toggle)}>
-                    < MdSegment />
+                <div className='flex items-center gap-x-4'>
+                    <Toggler />
+                    <div className="nav-toggle dark:text-[#fff]" onClick={() => ShowMenu(!Toggle)}>
+                        < MdSegment />
+                    </div>
                 </div>
             </nav>
         </header>

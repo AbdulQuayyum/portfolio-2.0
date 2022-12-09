@@ -5,14 +5,14 @@ import Mobile from './Mobile'
 
 const Skills = () => {
     return (
-        <section className="skills section" id="Skills">
-            <h2 className="section-title">
+        <section className="skills main-section" id="Skills">
+            <h2 className="section-title dark:text-[#fff]">
                 Skills
             </h2>
-            <span className="section-subtitle">
+            <span className="section-subtitle dark:text-gray-400">
                 Why choose Abdul-Quayyum?
             </span>
-            <div className="skills-container container grid">
+            <div className="skills-container main-container main-grid">
                 <Frontend />
                 <Backend />
                 <Mobile />

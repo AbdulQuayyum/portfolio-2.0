@@ -1,6 +1,7 @@
 .footer {
+    bottom: 0;
     background-color: var(--container-color);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgb(53 67 88 / 30%);
 }
 
 .footer-container {
@@ -13,8 +14,11 @@
 }
 
 .footer-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    /* margin-bottom: var(--mb-2); */
+    margin-bottom: var(--mb-2);
 }
 
 .footer-link:hover {

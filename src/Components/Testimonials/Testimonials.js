@@ -13,9 +13,9 @@ import { Autoplay, Pagination } from "swiper";
 
 const Testimonials = () => {
   return (
-    <section className="testimonial container section">
-      <h2 className="section-title">Testimonials</h2>
-      <span className="section-subtitle">What people say about Abdul-Quayyum</span>
+    <section className="testimonial main-container main-section">
+      <h2 className="section-title dark:text-[#fff]">Testimonials</h2>
+      <span className="section-subtitle dark:text-gray-400">What people say about Abdul-Quayyum</span>
       <Swiper
         loop={true}
         grabCursor={true}
@@ -44,11 +44,11 @@ const Testimonials = () => {
         className="testimonial-container">
         {Data.map(({ id, image, name, occupation, description }) => {
           return (
-            <SwiperSlide className="testimonial-card" key={id}>
+            <SwiperSlide className="testimonial-card  dark:bg-transparent dark:border-[#fff] dark:border-[1px]" key={id}>
               <img src={image} alt={name} className="testimonial-img" />
-              <h3 className="testimonial-name">{name}</h3>
-              <span className="testimonial-occuption">{occupation}</span>
-              <p className="testimonial-description">{description}</p>
+              <h3 className="testimonial-name dark:text-[#fff]">{name}</h3>
+              <span className="testimonial-occuption dark:text-gray-200">{occupation}</span>
+              <p className="testimonial-description dark:text-gray-300">{description}</p>
             </SwiperSlide>
           )
         })}

@@ -4,7 +4,7 @@
 
 .testimonial-card {
     background-color: var(--container-color);
-    border: 1px solid var(rgba(0, 0, 0, 0.1));
+    border: 1px solid rgb(53 67 88 / 30%);
     padding: 1.5rem 2rem;
     border-radius: 1.5rem;
     margin-bottom: var(--mb-3);
@@ -46,6 +46,7 @@
 @media screen and (max-width: 992px) {
     .testimonial-container {
         width: auto;
+        margin: 0 1rem;
     }
 
     .testimonial-card {

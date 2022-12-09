@@ -6,9 +6,9 @@ import gig from "../../Assets/Images/gig.png"
 const Home = () => {
 
     return (
-        <section className="home section" id="Home">
-            <div className="home-container container grid">
-                <div className="home-content grid">
+        <section className="home main-section" id="Home">
+            <div className="home-container main-container main-grid">
+                <div className="home-content main-grid">
                     <div className="home-content-1">
                         <Data />
                     </div>

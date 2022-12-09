@@ -13,24 +13,23 @@
 }
 
 .project-card {
-    background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--body-color);
+    border: 1px solid rgb(53 67 88 / 30%);
     padding: 1.25rem;
     border-radius: 1rem;
 }
 
 .project-item {
     cursor: pointer;
-    color: var(--title-color);
+    color: var(--text-color);
     padding: 0.25rem 0.75rem;
     font-weight: var(--font-medium);
-    border-radius: 0.5rem;
     text-transform: capitalize;
 }
 
 .project-item:hover {
-    background-color: var(--title-color);
-    color: var(--container-color);
+    /* border-bottom: 2px solid var(--title-color); */
+    color: var(--title-color);
 }
 
 .project-img {
@@ -88,8 +87,8 @@
 }
 
 .active-project {
-    background-color: var(--title-color);
-    color: var(--container-color);
+    border-bottom: 2px solid var(--title-color);
+    color: var(--title-color);
 }
 
 /*=============== BREAKPOINTS ===============*/

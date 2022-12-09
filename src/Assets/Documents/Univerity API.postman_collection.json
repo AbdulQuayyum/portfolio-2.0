@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "6c61285b-5948-441e-958f-49a4b2d9268b",
+		"name": "Univerity API",
+		"description": "University Backend API to manage Universities, Courses, students, lecturers and reviews",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19586111"
+	},
+	"item": [
+		{
+			"name": "University",
+			"item": [
+				{
+					"name": "Get all universities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev_url}}/api/v1/Universities",
+							"host": [
+								"{{dev_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Universities"
+							]
+						},
+						"description": "Fetch all Universities in the database"
+					},
+					"response": []
+				},
+				{
+					"name": "Get university",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create university",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "JSON Content-Type",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shortName\": \"Unilorin\",\r\n    \"fullName\": \"University of Ilorin\",\r\n    \"motto\": \"Probitas Doctrina: Better by far.\",\r\n    \"website\": \"https://www.unilorin.edu.ng\",\r\n    \"category\": \"Federal\",\r\n    \"address\": \"Ilorin, Kwara State, Nigeria\",\r\n    \"Vice_Chancellor\": \"Prof. Wahab Egbewole\"\r\n}"
+						},
+						"url": {
+							"raw": "{{dev_url}}/api/v1/Universities",
+							"host": [
+								"{{dev_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Universities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete university",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{dev_url}}/api/v1/Universities/6353c16c89423f4745158cb9",
+							"host": [
+								"{{dev_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Universities",
+								"6353c16c89423f4745158cb9"
+							]
+						},
+						"description": "Delete a particular University"
+					},
+					"response": []
+				}
+			],
+			"description": "Universities CRUD functionalities"
+		}
+	]
+}

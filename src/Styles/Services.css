@@ -6,9 +6,10 @@
 
 .services-content {
     position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--container-color);
+    border: 1px solid rgb(53 67 88 / 30%);
+    background-color: var(--body-color);
     padding: 6rem 0 2rem 2.5rem;
+    border-radius: 1rem;
 }
 
 .services-icon {
@@ -63,7 +64,7 @@
 .services-modal-content {
     width: 500px;
     position: relative;
-    background-color: var(--container-color);
+    background-color: var(--body-color);
     padding: 4.5rem 2.5rem 2.5rem ;
     border-radius: 1.5rem;
 }

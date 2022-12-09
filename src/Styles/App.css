@@ -6,18 +6,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
-:root {
+html {
   --header-height: 3rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
+  --title-color: rgb(53 67 88 / 90%);
+  --title-color-dark: #354358 ;
+  --text-color: rgba(54, 68, 89, 0.6);
+  --body-color: #fff;
+  --main-container-color: rgba(54, 68, 89, 0);
 
   /*========== Font and typography ==========*/
   --body-font: "Nunito", sans-serif;
@@ -86,10 +86,10 @@ textarea {
   font-size: var(--normal-font-size);
 }
 
-body {
+/* body {
   background-color: var(--body-color);
   color: var(--text-color);
-}
+} */
 
 h1,
 h2,
@@ -118,7 +118,7 @@ img {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.section {
+.main-section {
   padding: 6rem 0 2rem;
 }
 
@@ -139,28 +139,28 @@ img {
 }
 
 /*=============== LAYOUT ===============*/
-.container {
+.main-container {
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.grid {
+.main-grid {
   display: grid;
   gap: 1.5rem;
 }
 
 /*=============== BUTTONS ===============*/
-.button {
+.main-button {
   display: inline-block;
   background-color: var(--title-color);
-  color: var(--container-color);
+  color: var(--body-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
 }
 
-.button:hover {
+.main-button:hover {
   background-color: var(--title-color-dark);
 }
 
@@ -176,12 +176,12 @@ img {
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
-  .container {
+  .main-container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
 
-  .button {
+  .main-button {
     padding: 1rem 1.75rem;
   }
 
@@ -197,7 +197,7 @@ img {
     margin: 0 0 var(--header-height) 0;
   }
 
-  .section {
+  .main-section {
     padding: 2rem 0 4rem;
   }
 
@@ -215,7 +215,7 @@ img {
     --big-font-size: 2.25rem;
   }
 
-  .container {
+  .main-container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }

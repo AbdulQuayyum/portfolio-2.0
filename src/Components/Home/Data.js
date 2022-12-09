@@ -41,8 +41,8 @@ const Data = () => {
         }
   }
   return (
-    <div className="home-data">
-      <h1 className="home-title">
+    <div className="home-data ">
+      <h1 className="home-title dark:text-[#fff]">
         Heyy
          {/* I am
         <br />
@@ -97,10 +97,10 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home-subtitle">
+      <h3 className="home-subtitle dark:text-[#fff]">
        I'm Abdul-Quayyum, a {text}
       </h3>
-      <p className="home-description">
+      <p className="home-description dark:text-[#fff]">
         I am an efficient Software Engineer, and I am very passionate and dedicated to my work.
       </p>
       {/* <a href="#Contact" id="contact" className='button button-flex'>

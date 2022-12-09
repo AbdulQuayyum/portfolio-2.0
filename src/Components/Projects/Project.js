@@ -3,9 +3,9 @@ import Projects from './Projects'
 
 const Project = () => {
   return (
-    <section className="project section" id="Projects">
-      <h2 className="section-title">Projects</h2>
-      <span className="section-subtitle">Let's check out some of Abdul-Quayyum's projeects</span>
+    <section className="project main-section" id="Projects">
+      <h2 className="section-title dark:text-[#fff]">Projects</h2>
+      <span className="section-subtitle dark:text-gray-400">Let's check out some of Abdul-Quayyum's projeects</span>
       <Projects />
     </section>
   )
