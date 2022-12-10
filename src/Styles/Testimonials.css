@@ -34,11 +34,11 @@
 }
 
 .swiper-pagination-bullet {
-    background-color: var(--text-color) !important;
+    background-color: grey !important;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: var(--title-color);
+    background-color: #000 !important;
 }
 
 /*=============== BREAKPOINTS ===============*/

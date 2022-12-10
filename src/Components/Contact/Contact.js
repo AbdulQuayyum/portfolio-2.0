@@ -122,7 +122,7 @@ const Contact = (props) => {
                 <p className="help">{errors.visitorMessage}</p>
               )}
             </div>
-            <button className='main-button button-flex dark:!bg-transparent dark:!border-[#fff] dark:!border-2'>
+            <button className='main-button button-flex dark:bg-transparent dark:border-[#fff] dark:border-2'>
               Send Message
               <svg
                 className="button-icon"
