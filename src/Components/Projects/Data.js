@@ -1,12 +1,13 @@
-import project from "../../Assets/Images/project.png"
-import user from "../../Assets/Images/user.png"
+import auth from "../../Assets/Images/auth.png"
 import cat from "../../Assets/Images/cat.png"
 import clone from "../../Assets/Images/clone.png"
-import auth from "../../Assets/Images/auth.png"
-import uni from "../../Assets/Images/uni.png"
 import course from "../../Assets/Images/course.png"
-import uniapi from "../../Assets/Documents/Univerity API.postman_collection.json"
-import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiThreedotjs, SiReact, SiNextdotjs, SiVuedotjs, SiAngular, SiBootstrap, SiJquery, SiMongodb, SiNodedotjs, SiExpress, SiSupabase } from "react-icons/si"
+import crowdfunding from "../../Assets/Images/crowdfunding.png"
+import imggen from "../../Assets/Images/img-gen.png"
+import project from "../../Assets/Images/project.png"
+import user from "../../Assets/Images/user.png"
+import uni from "../../Assets/Images/uni.png"
+import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiThreedotjs, SiReact, SiNextdotjs, SiVuedotjs, SiAngular, SiBootstrap, SiJquery, SiMongodb, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai } from "react-icons/si"
 export const projectsData = [
     {
         id: 1,
@@ -146,8 +147,38 @@ export const projectsData = [
         project: "https://github.com/AbdulQuayyum",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing",
         tech: [
-            <SiHtml5 />,
+            < SiHtml5 />,
             < SiCss3 />,
+        ]
+    },
+    {
+        id: 11,
+        image: imggen,
+        name: "Image Generator",
+        category: "Backend",
+        githubUrl: "https://github.com/AbdulQuayyum/image-generator.git",
+        project: "https://image-generator-jade.vercel.app/Frontend/Index.html",
+        description: "A web application using Node.js, Express, Openai",
+        tech: [
+            < SiNodedotjs />,
+            < SiExpress />,
+            < SiOpenai />,
+            < SiHtml5 />,
+            < SiTailwindcss />,
+        ]
+    },
+    {
+        id: 12,
+        image: crowdfunding,
+        name: "Crowdfunding Platform",
+        category: "Frontend",
+        githubUrl: "https://github.com/AbdulQuayyum/crowdfunding_platform.git",
+        project: "https://github.com/AbdulQuayyum/crowdfunding_platform.git",
+        description: "A web application using Vite, Thirdweb to create a web3 based crowdfunfing project",
+        tech: [
+            < SiVite />,
+            < SiReact />,
+            < SiTailwindcss />,
         ]
     },
 ]

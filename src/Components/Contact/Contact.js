@@ -76,7 +76,7 @@ const Contact = (props) => {
           <h3 className='contact-title dark:text-gray-300'>Send a quick message</h3>
           <form className="contact-form" ref={form} onSubmit={handleSubmit}>
             <div className="contact-form-div">
-              <label htmlFor="" className="contact-form-tag dark:bg-[#354358] dark:text-[#fff]">Name</label>
+              <label htmlFor="" className="contact-form-tag dark:bg-[#1c1c24] dark:text-[#fff]">Name</label>
               <input
                 type="text"
                 name='visitorName'
@@ -91,7 +91,7 @@ const Contact = (props) => {
               )}
             </div>
             <div className="contact-form-div">
-              <label htmlFor="" className="contact-form-tag dark:bg-[#354358] dark:text-[#fff]">Email address</label>
+              <label htmlFor="" className="contact-form-tag dark:bg-[#1c1c24] dark:text-[#fff]">Email address</label>
               <input
                 type="email"
                 name='visitorEmail'
@@ -106,7 +106,7 @@ const Contact = (props) => {
               )}
             </div>
             <div className="contact-form-div contact-form-area">
-              <label htmlFor="" className="contact-form-tag dark:bg-[#354358] dark:text-[#fff]">Message</label>
+              <label htmlFor="" className="contact-form-tag dark:bg-[#1c1c24] dark:text-[#fff]">Message</label>
               <textarea
                 name="visitorMessage"
                 id=""

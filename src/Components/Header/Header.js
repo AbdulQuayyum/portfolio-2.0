@@ -19,14 +19,14 @@ const Header = () => {
     const [Toggle, ShowMenu] = useState(false)
     const [activeNav, setActiveNav] = useState("#Home")
     return (
-        <header className="main-header dark:bg-[#354358]">
+        <header className="main-header dark:bg-[#1c1c24]">
             <nav className="nav main-container">
                 <a href="/" className="nav-logo">
                     <img src={abdulquayyum} alt="..." />
                 </a>
-                <div className={Toggle ? "nav-menu show-menu dark:bg-[#354358] " : "nav-menu"}>
+                <div className={Toggle ? "nav-menu show-menu dark:bg-[#1c1c24] " : "nav-menu"}>
                     < IoClose className="nav-close dark:text-[#fff] dark:hover:text-gray-300" onClick={() => ShowMenu(!Toggle)} />
-                    <ul className="nav-list main-grid dark:bg-[#354358]">
+                    <ul className="nav-list main-grid dark:bg-[#1c1c24]">
                         <li className="nav-item">
                             <a href="#Home" onClick={() => setActiveNav("#Home")} className={activeNav === "#Home" ? "dark:text-[#fff] nav-link active-link dark:hover:text-gray-300" : "dark:text-[#fff] nav-link dark:hover:text-gray-300"}>
                                 <TbHome className='nav-icon' />
