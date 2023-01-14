@@ -5,7 +5,9 @@ import { IoClose } from "react-icons/io5"
 import { MdSegment } from "react-icons/md"
 import { CgFileDocument } from "react-icons/cg"
 import Toggler from '../Theme/ThemeToggle'
+// import Toggler from '../Theme/Index'
 import abdulquayyum from "../../Assets/Images/abdulquayyum.png"
+// import abdulquayyum from "../../Assets/Index"
 
 // import { Link } from "react-router-dom";
 

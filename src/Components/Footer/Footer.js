@@ -1,5 +1,6 @@
 import React from 'react'
 import abdulquayyum from "../../Assets/Images/abdulquayyum.png"
+// import abdulquayyum from "../../Assets/Index"
 import { BsGithub, BsTwitter, BsLinkedin, BsInstagram } from "react-icons/bs"
 const currentYear = new Date().getFullYear();
 

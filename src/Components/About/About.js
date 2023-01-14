@@ -1,6 +1,7 @@
 import React from 'react'
-import profile from "../../Assets/Images/cat.jpeg"
-import resume from "../../Assets/Documents/resume.pdf"
+// import profile from "../../Assets/Images/cat.jpeg"
+// import resume from "../../Assets/Documents/resume.pdf"
+import { profile, resume } from "../../Assets/Index"
 import Info from './Info'
 
 const About = () => {

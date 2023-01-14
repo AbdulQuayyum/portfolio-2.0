@@ -1,9 +1,11 @@
-import ahmid from "../../Assets/Images/ahmid.jpeg"
-import larkun from "../../Assets/Images/larkun.png"
-import surdykbaba from "../../Assets/Images/surdykbaba.png"
-import yusufuabu from "../../Assets/Images/yusufuabu.png"
-import muhees from "../../Assets/Images/muhees.png"
-import nike from "../../Assets/Images/nike.png"
+// import ahmid from "../../Assets/Images/ahmid.jpeg"
+// import larkun from "../../Assets/Images/larkun.png"
+// import surdykbaba from "../../Assets/Images/surdykbaba.png"
+// import yusufuabu from "../../Assets/Images/yusufuabu.png"
+// import muhees from "../../Assets/Images/muhees.png"
+// import nike from "../../Assets/Images/nike.png"
+
+import { ahmid, larkun, surdykbaba, yusufuabu, muhees, nike } from "../../Assets/Index"
 
 export const Data = [
     {

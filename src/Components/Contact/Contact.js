@@ -4,8 +4,9 @@ import cogoToast from 'cogo-toast';
 import { FaHandPointRight } from "react-icons/fa"
 import { SiGmail } from "react-icons/si"
 import { BsLinkedin, BsWhatsapp } from "react-icons/bs"
-import useForm from '../Validations/useForm';
-import validate from '../Validations/Validator';
+// import useForm from '../Validations/useForm';
+// import validate from '../Validations/Validator';
+import { useForm, validate } from "../Validations/Index"
 
 const Contact = (props) => {
 

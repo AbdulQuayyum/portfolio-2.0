@@ -1,13 +1,17 @@
-import auth from "../../Assets/Images/auth.png"
-import cat from "../../Assets/Images/cat.png"
-import clone from "../../Assets/Images/clone.png"
-import course from "../../Assets/Images/course.png"
-import crowdfunding from "../../Assets/Images/crowdfunding.png"
-import imggen from "../../Assets/Images/img-gen.png"
-import project from "../../Assets/Images/project.png"
-import user from "../../Assets/Images/user.png"
-import uni from "../../Assets/Images/uni.png"
-import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiThreedotjs, SiReact, SiNextdotjs, SiVuedotjs, SiAngular, SiBootstrap, SiJquery, SiMongodb, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai } from "react-icons/si"
+// import auth from "../../Assets/Images/auth.png"
+// import cat from "../../Assets/Images/cat.png"
+// import clone from "../../Assets/Images/clone.png"
+// import course from "../../Assets/Images/course.png"
+// import crowdfunding from "../../Assets/Images/crowdfunding.png"
+// import imggen from "../../Assets/Images/img-gen.png"
+// import project from "../../Assets/Images/project.png"
+// import softgames from "../../Assets/Images/softgames.png"
+// import user from "../../Assets/Images/user.png"
+// import uni from "../../Assets/Images/uni.png"
+
+import { auth, cat, clone, course, crowdfunding, imggen, project, softgames, user, uni } from "../../Assets/Index"
+
+import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiThreedotjs, SiReact, SiNextdotjs, SiVuedotjs, SiAngular, SiBootstrap, SiJquery, SiMongodb, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer } from "react-icons/si"
 export const projectsData = [
     {
         id: 1,
@@ -170,7 +174,7 @@ export const projectsData = [
     {
         id: 12,
         image: crowdfunding,
-        name: "Crowdfunding Platform",
+        name: "Soft Crowdfunding Platform",
         category: "Frontend",
         githubUrl: "https://github.com/AbdulQuayyum/crowdfunding_platform.git",
         project: "https://github.com/AbdulQuayyum/crowdfunding_platform.git",
@@ -178,6 +182,20 @@ export const projectsData = [
         tech: [
             < SiVite />,
             < SiReact />,
+            < SiTailwindcss />,
+        ]
+    },
+    {
+        id: 13,
+        image: softgames,
+        name: "Soft Games",
+        category: "Frontend",
+        githubUrl: "https://github.com/AbdulQuayyum/soft-games.git",
+        project: "https://soft-games.vercel.app/",
+        description: "A web application using Next.js, tailwind and framer motion to create a landing page for a game platform.",
+        tech: [
+            < SiNextdotjs />,
+            < SiFramer />,
             < SiTailwindcss />,
         ]
     },
