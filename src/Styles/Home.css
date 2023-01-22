@@ -197,14 +197,14 @@
     }
 
     .home-subtitle {
-        padding-left: 3.75rem;
+        /* padding-left: 3.75rem; */
         margin-bottom: var(--mb-1);
     }
 
-    .home-subtitle::before {
+    /* .home-subtitle::before {
         width: 42px;
         top: 0.8rem;
-    }
+    } */
 
     .home-description {
         max-width: 400px;

@@ -32,7 +32,7 @@ const Projects = () => {
               onClick={(e) => {
                 handleClick(e, index)
               }}
-              className={`${active === index ? "active-project dark:border-[var(--body-color)] dark:border-b-2  dark:rounded-none" : ""} project-item dark:hover:text-[var(--title-dark)] dark:bg-transparent dark:text-[var(--body-color)]  `} key={index}>
+              className={`${active === index ? "active-project dark:border-[var(--body-color)] dark:border-b-2  dark:rounded-none" : ""} project-item dark:hover:text-[var(--title-color-dark)] dark:bg-transparent dark:text-[var(--body-color)]  `} key={index}>
               {item.name}
             </span>
           )
