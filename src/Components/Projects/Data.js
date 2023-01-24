@@ -1,17 +1,7 @@
-// import auth from "../../Assets/Images/auth.png"
-// import cat from "../../Assets/Images/cat.png"
-// import clone from "../../Assets/Images/clone.png"
-// import course from "../../Assets/Images/course.png"
-// import crowdfunding from "../../Assets/Images/crowdfunding.png"
-// import imggen from "../../Assets/Images/img-gen.png"
-// import project from "../../Assets/Images/project.png"
-// import softgames from "../../Assets/Images/softgames.png"
-// import user from "../../Assets/Images/user.png"
-// import uni from "../../Assets/Images/uni.png"
+import { aiweb, auth, cat, clone, course, crowdfunding, imggen, softgames, softCard, softtours, uni, landing, portfolio, chatapp, nftapp, weather } from "../../Assets/Index"
 
-import { aiweb, auth, cat, clone, course, crowdfunding, imggen, project, softgames, softCard, softtours, user, uni, landing, portfolio } from "../../Assets/Index"
-
-import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiThreedotjs, SiSass, SiReact, SiNextdotjs, SiVuedotjs, SiAngular, SiBootstrap, SiJquery, SiMongodb, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiSolidity } from "react-icons/si"
+import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiSass, SiReact, SiNextdotjs, SiMongodb, SiExpo, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiSolidity, SiFirebase, SiDart, SiFlutter } from "react-icons/si"
+import { TbBrandReactNative } from "react-icons/tb"
 export const projectsData = [
     {
         id: 1,
@@ -22,8 +12,8 @@ export const projectsData = [
         project: "https://cats-amber.vercel.app/",
         description: "A Web Application to showcase some breeds of cats",
         tech: [
-            < SiJavascript />,
             < SiTypescript />,
+            < SiJavascript />,
             < SiNextdotjs />,
             < SiCss3 />,
             < SiTailwindcss />,
@@ -140,7 +130,6 @@ export const projectsData = [
         project: "https://github.com/AbdulQuayyum/MERN-Netflix-clone/tree/main/api",
         description: "An API service for a Netflix clone.",
         tech: [
-            < SiJavascript />,
             < SiNodedotjs />,
             < SiExpress />,
             < SiMongodb />,
@@ -155,7 +144,6 @@ export const projectsData = [
         project: "https://github.com/AbdulQuayyum/Authentication-API",
         description: "An authentication API service.",
         tech: [
-            < SiJavascript />,
             < SiNodedotjs />,
             < SiExpress />,
             < SiMongodb />,
@@ -170,7 +158,6 @@ export const projectsData = [
         project: "https://github.com/AbdulQuayyum/course-api.git",
         description: "An API service to group the courses I am offering in school.",
         tech: [
-            < SiJavascript />,
             < SiNodedotjs />,
             < SiExpress />,
             < SiMongodb />,
@@ -185,7 +172,6 @@ export const projectsData = [
         project: "https://github.com/AbdulQuayyum/university-api.git",
         description: "An API service to group some selected universities and more informations.",
         tech: [
-            < SiJavascript />,
             < SiNodedotjs />,
             < SiExpress />,
             < SiMongodb />,
@@ -205,6 +191,46 @@ export const projectsData = [
             < SiOpenai />,
             < SiHtml5 />,
             < SiTailwindcss />,
+        ]
+    },
+    {
+        id: 14,
+        image: chatapp ,
+        name: "Chat App",
+        category: "Mobile",
+        githubUrl: "https://github.com/AbdulQuayyum/dev-stage.git",
+        project: "https://github.com/AbdulQuayyum/dev-stage.git",
+        description: "A Chatting mobile application using React Native, Expo, Firebase and other dependencies.",
+        tech: [
+            < TbBrandReactNative />,
+            < SiFirebase />,
+            < SiExpo />,
+        ]
+    },
+    {
+        id: 15,
+        image: nftapp ,
+        name: "Nft App",
+        category: "Mobile",
+        githubUrl: "https://github.com/AbdulQuayyum/React-Native-NFT-App.git",
+        project: "https://github.com/AbdulQuayyum/React-Native-NFT-App.git",
+        description: "A NFT mobile application using React Native, Expo and other dependencies.",
+        tech: [
+            < TbBrandReactNative />,
+            < SiFirebase />,
+        ]
+    },
+    {
+        id: 16,
+        image: weather ,
+        name: "Weather App",
+        category: "Mobile",
+        githubUrl: "https://github.com/AbdulQuayyum/weather_app.git",
+        project: "https://github.com/AbdulQuayyum/weather_app.git",
+        description: "A Weather mobile application using Flutter, Dart and other dependencies.",
+        tech: [
+            < SiFlutter />,
+            < SiDart />,
         ]
     },
 ]

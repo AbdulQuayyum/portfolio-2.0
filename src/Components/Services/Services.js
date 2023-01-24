@@ -33,30 +33,30 @@ const Services = () => {
             View more {" "} < FaHandPointRight className='services-button-icon dark:text-[#fff]' />
           </span>
           <div className={toggle === 1 ? "services-modal active-modal" : "services-modal"}>
-            <div className="services-modal-content">
-              < MdCloseFullscreen className='services-modal-close' onClick={() => toggleTab(0)} />
-              <h3 className="services-modal-title dark:text-[#354358]">
+            <div className="services-modal-content dark:bg-[#1c1c24]">
+              < MdCloseFullscreen className='services-modal-close dark:text-[#fff]' onClick={() => toggleTab(0)} />
+              <h3 className="services-modal-title dark:text-[#fff]">
                 Frontend Engineer
               </h3>
-              <p className="services-modal-description dark:text-[#354358]">
+              <p className="services-modal-description dark:text-[#fff]">
                 Providing quality service for clients and companies, with more than 2 years of experience
               </p>
               <ul className="services-modal-services main-grid">
                 <li className="services-modal-service">
-                  < BsPatchCheck className='services-modal-icon dark:text-gray-400' />
-                  <p className="services-modal-info dark:text-gray-400">
+                  < BsPatchCheck className='services-modal-icon dark:text-gray-300' />
+                  <p className="services-modal-info dark:text-gray-300">
                     I Develop and maintain the UI.
                   </p>
                 </li>
                 <li className="services-modal-service">
-                  < BsPatchCheck className='services-modal-icon dark:text-gray-400' />
-                  <p className="services-modal-info dark:text-gray-400">
+                  < BsPatchCheck className='services-modal-icon dark:text-gray-300' />
+                  <p className="services-modal-info dark:text-gray-300">
                     i create UX element interactions.
                   </p>
                 </li>
                 <li className="services-modal-service">
-                  < BsPatchCheck className='services-modal-icon dark:text-gray-400' />
-                  <p className="services-modal-info dark:text-gray-400">
+                  < BsPatchCheck className='services-modal-icon dark:text-gray-300' />
+                  <p className="services-modal-info dark:text-gray-300">
                     I fix bugs and test the project for usability
                   </p>
                 </li>
@@ -76,29 +76,29 @@ const Services = () => {
           </span>
           <div className={toggle === 2 ? "services-modal active-modal" : "services-modal"}>
             <div className="services-modal-content">
-              < MdCloseFullscreen className='services-modal-close' onClick={() => toggleTab(0)} />
-              <h3 className="services-modal-title dark:text-[#354358]">
+              < MdCloseFullscreen className='services-modal-close dark:text-[#fff]' onClick={() => toggleTab(0)} />
+              <h3 className="services-modal-title dark:text-[#fff]">
                 Backend Engineer
               </h3>
-              <p className="services-modal-description dark:text-[#354358]">
+              <p className="services-modal-description dark:text-[#fff]">
                 Providing quality service for clients and companies, with more than 1 year of experience
               </p>
               <ul className="services-modal-services main-grid">
                 <li className="services-modal-service">
-                  < BsPatchCheck className='services-modal-icon dark:text-gray-400' />
-                  <p className="services-modal-info dark:text-gray-400">
+                  < BsPatchCheck className='services-modal-icon dark:text-gray-300' />
+                  <p className="services-modal-info dark:text-gray-300">
                   I implement algorithms and solve system related problems.
                   </p>
                 </li>
                 <li className="services-modal-service">
-                  < BsPatchCheck className='services-modal-icon dark:text-gray-400' />
-                  <p className="services-modal-info dark:text-gray-400">
+                  < BsPatchCheck className='services-modal-icon dark:text-gray-300' />
+                  <p className="services-modal-info dark:text-gray-300">
                     I manage APIs resources which work across devices.
                   </p>
                 </li>
                 <li className="services-modal-service">
-                  < BsPatchCheck className='services-modal-icon dark:text-gray-400' />
-                  <p className="services-modal-info dark:text-gray-400">
+                  < BsPatchCheck className='services-modal-icon dark:text-gray-300' />
+                  <p className="services-modal-info dark:text-gray-300">
                     I strore data and ensure that it is displayed to the right users.
                   </p>
                 </li>
@@ -118,29 +118,29 @@ const Services = () => {
           </span>
           <div className={toggle === 3 ? "services-modal active-modal" : "services-modal"}>
             <div className="services-modal-content">
-              < MdCloseFullscreen className='services-modal-close' onClick={() => toggleTab(0)} />
-              <h3 className="services-modal-title dark:text-[#354358]">
+              < MdCloseFullscreen className='services-modal-close dark:text-[#fff]' onClick={() => toggleTab(0)} />
+              <h3 className="services-modal-title dark:text-[#fff]">
                 Mobile Engineer
               </h3>
-              <p className="services-modal-description dark:text-[#354358]">
+              <p className="services-modal-description dark:text-[#fff]">
                 Providing quality service for clients and companies, with nearly 1 year of experience
               </p>
               <ul className="services-modal-services main-grid">
                 <li className="services-modal-service">
-                  < BsPatchCheck className='services-modal-icon dark:text-gray-400' />
-                  <p className="services-modal-info dark:text-gray-400">
+                  < BsPatchCheck className='services-modal-icon dark:text-gray-300' />
+                  <p className="services-modal-info dark:text-gray-300">
                     I Develop and maintain the UI.
                   </p>
                 </li>
                 <li className="services-modal-service">
-                  < BsPatchCheck className='services-modal-icon dark:text-gray-400' />
-                  <p className="services-modal-info dark:text-gray-400">
+                  < BsPatchCheck className='services-modal-icon dark:text-gray-300' />
+                  <p className="services-modal-info dark:text-gray-300">
                     i create UX element interactions.
                   </p>
                 </li>
                 <li className="services-modal-service">
-                  < BsPatchCheck className='services-modal-icon dark:text-gray-400' />
-                  <p className="services-modal-info dark:text-gray-400">
+                  < BsPatchCheck className='services-modal-icon dark:text-gray-300' />
+                  <p className="services-modal-info dark:text-gray-300">
                     I create cross platform applications
                   </p>
                 </li>

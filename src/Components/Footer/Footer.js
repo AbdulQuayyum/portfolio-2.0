@@ -1,6 +1,5 @@
 import React from 'react'
-import abdulquayyum from "../../Assets/Images/abdulquayyum.png"
-// import abdulquayyum from "../../Assets/Index"
+import { logo } from '../../Assets/Index'
 import { BsGithub, BsTwitter, BsLinkedin, BsInstagram } from "react-icons/bs"
 const currentYear = new Date().getFullYear();
 
@@ -10,7 +9,7 @@ const Footer = () => {
             <div className="footer-container main-container">
                 <h1 className="footer-title">
                 
-                <img src={abdulquayyum} alt="..." />
+                <img src={logo} className="h-24" alt="..." />
                 </h1>
                 <ul className="footer-list">
                     <li>

@@ -1,7 +1,5 @@
 import React from 'react'
-// import profile from "../../Assets/Images/cat.jpeg"
-// import resume from "../../Assets/Documents/resume.pdf"
-import { profile, resume } from "../../Assets/Index"
+import { resume } from "../../Assets/Index"
 import Info from './Info'
 
 const About = () => {
@@ -19,7 +17,7 @@ const About = () => {
         <div className="about-data">
           <Info />
           <p className="about-description dark:text-[#fff]">
-         I am a Software Engineer using JavaScript || TypeScript || React.Js || Next.Js || Vue.Js || Express.Js || Next.Js || Three.Js || Python || Flutter || Dart || React-Native Technologies to solve problems.
+         I am a Software Engineer using JavaScript || TypeScript || React.Js || Next.Js || Vue.Js || Express.Js || Next.Js || Three.Js || Python || Flutter || Dart || React-Native Technologies to provide solutions to problems, provide more efficient solutions to available solutions.
           </p>
           <a download="Abdul-Quayyum's Resume" href={resume} className="main-button button-flex dark:bg-transparent dark:border-[#fff] dark:border-2">
             Check out my CV

@@ -5,17 +5,13 @@ import { IoClose } from "react-icons/io5"
 import { MdSegment } from "react-icons/md"
 import { CgFileDocument } from "react-icons/cg"
 import Toggler from '../Theme/ThemeToggle'
-// import Toggler from '../Theme/Index'
-import abdulquayyum from "../../Assets/Images/abdulquayyum.png"
-// import abdulquayyum from "../../Assets/Index"
-
-// import { Link } from "react-router-dom";
+import { logo } from '../../Assets/Index'
 
 const Header = () => {
     window.addEventListener("scroll", function () {
         const header = document.querySelector(".header");
-        if (this.scrollY >= 80) header.classList.add("scroll-header");
-        else header.classList.remove("scroll-header");
+        if (this?.scrollY >= 80) header?.classList?.add("scroll-header");
+        else header?.classList?.remove("scroll-header");
     })
 
     const [Toggle, ShowMenu] = useState(false)
@@ -24,7 +20,7 @@ const Header = () => {
         <header className="main-header dark:bg-[#1c1c24]">
             <nav className="nav main-container">
                 <a href="/" className="nav-logo">
-                    <img src={abdulquayyum} alt="..." />
+                    <img src={logo} alt="..." />
                 </a>
                 <div className={Toggle ? "nav-menu show-menu dark:bg-[#1c1c24] " : "nav-menu"}>
                     < IoClose className="nav-close dark:text-[#fff] dark:hover:text-gray-300" onClick={() => ShowMenu(!Toggle)} />

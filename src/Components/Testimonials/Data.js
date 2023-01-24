@@ -1,11 +1,4 @@
-// import ahmid from "../../Assets/Images/ahmid.jpeg"
-// import larkun from "../../Assets/Images/larkun.png"
-// import surdykbaba from "../../Assets/Images/surdykbaba.png"
-// import yusufuabu from "../../Assets/Images/yusufuabu.png"
-// import muhees from "../../Assets/Images/muhees.png"
-// import nike from "../../Assets/Images/nike.png"
-
-import { ahmid, larkun, surdykbaba, yusufuabu, muhees, nike } from "../../Assets/Index"
+import { ahmid, larkun, surdykbaba, yusufuabu, muhees, nike, kiki } from "../../Assets/Index"
 
 export const Data = [
     {
@@ -53,6 +46,14 @@ export const Data = [
         image: nike,
         name: "Adenike Shonowo",
         occupation: "Project Manager @ D'Accubin", 
+        description: 
+        "Lorem Ipsum is Lorem Ipsum but was Praesent Ipsum in 1 when it was Praesent Ipsum in 1 when it was Praesent Ipsum"
+    },
+    {
+        id: 7,
+        image: kiki,
+        name: "Adenike Shonowo",
+        occupation: "Product Designer @ D'Accubin", 
         description: 
         "Lorem Ipsum is Lorem Ipsum but was Praesent Ipsum in 1 when it was Praesent Ipsum in 1 when it was Praesent Ipsum"
     },
