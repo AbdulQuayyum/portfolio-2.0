@@ -1,0 +1,144 @@
+.project-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+    margin-bottom: var(--mb-2);
+}
+
+.project-container {
+    grid-template-columns: repeat(2, max-content);
+    gap: 3rem;
+    justify-content: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--body-color);
+    border: 1px solid rgb(53 67 88 / 30%);
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+.project-item {
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 0.25rem 0.75rem;
+    font-weight: var(--font-medium);
+    text-transform: capitalize;
+}
+
+.project-item:hover {
+    /* border-bottom: 2px solid var(--title-color); */
+    color: var(--title-color);
+}
+
+.project-img {
+    width: 295px;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1);
+}
+
+.project-decription {
+    display: flex;
+    text-align: justify;
+    max-width: 290px !important;
+}
+
+.project-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(---mb-0-5);
+}
+
+.project-tech {
+    padding-top: 1rem;
+}
+
+.project-tech span {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.project-icons-div {
+    padding-top: 1rem;
+    justify-content: flex-end;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.project-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-icons span {
+    color: var(--text-color);
+}
+
+.project-icon {
+    color: var(--text-color);
+    font-size: var(--h2-font-size);
+    transition: 0.4s;
+}
+
+.project-icon:hover {
+    transform: translateY(-0.25rem);
+}
+
+.active-project {
+    border-bottom: 2px solid var(--title-color);
+    color: var(--title-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .project-container {
+        gap: 1.25rem;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+
+    .project-img {
+        margin-bottom: 0.75rem;
+    }
+
+    .project-title {
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .project-container {
+        grid-template-columns: max-content;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+}
+
+/* For smaller devices */
+@media screen and (max-width: 350px) {
+    .project-item {
+        font-size: var(--small-font-size);
+    }
+
+    .project-filters {
+        column-gap: 0.25rem;
+    }
+}
