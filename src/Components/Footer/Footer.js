@@ -36,7 +36,7 @@ const Footer = () => {
                         <BsInstagram />
                     </a>
                 </div>
-                <span className="footer-copy dark:text-[#fff]">{currentYear} &#169 Abdul-Quayyum Alao, All rights reserved</span>
+                <span className="footer-copy dark:text-[#fff]">{currentYear} &#169; Abdul-Quayyum Alao, All rights reserved</span>
             </div>
         </footer>
     )
