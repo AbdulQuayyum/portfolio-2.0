@@ -1,5 +1,5 @@
 import React from 'react'
-import { resume } from "../../Assets/Index"
+import resume from '../../Assets/Documents/resume.pdf'
 import Info from './Info'
 
 const About = () => {
