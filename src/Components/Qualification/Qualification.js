@@ -4,7 +4,7 @@ import { TbBriefcase } from "react-icons/tb"
 import { BsCalendar3 } from "react-icons/bs"
 
 const Qualification = () => {
-    const [toggle, setToggle] = useState(1);
+    const [toggle, setToggle] = useState(1)
 
     const toggleTab = (index) => {
         setToggle(index)

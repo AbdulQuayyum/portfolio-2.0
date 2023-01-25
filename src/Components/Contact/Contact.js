@@ -1,16 +1,16 @@
-import React, { useRef} from 'react';
-import emailjs from '@emailjs/browser';
-import cogoToast from 'cogo-toast';
+import React, { useRef} from 'react'
+import emailjs from '@emailjs/browser'
+import cogoToast from 'cogo-toast'
 import { FaHandPointRight } from "react-icons/fa"
 import { SiGmail } from "react-icons/si"
 import { BsLinkedin, BsWhatsapp } from "react-icons/bs"
-// import useForm from '../Validations/useForm';
-// import validate from '../Validations/Validator';
+// import useForm from '../Validations/useForm'
+// import validate from '../Validations/Validator'
 import { useForm, validate } from "../Validations/Index"
 
 const Contact = (props) => {
 
-  const form = useRef();
+  const form = useRef()
 
   const sendEmail = () => {
     emailjs.sendForm('service_48ie7qs', 'template_vx1z2un', form.current, 'u52fGo9v9_4YPsyao')
@@ -20,23 +20,23 @@ const Contact = (props) => {
             <b>Success</b>
             <div>Messeage sent successfully</div>
           </div>, { position: 'top-right' }
-        );
+        )
       }).catch(() => {
         cogoToast.error(
           <div>
             <b>Error</b>
             <div>Message not sent, try again</div>
           </div>, { position: 'top-right' }
-        );
-      });
-  };
+        )
+      })
+  }
 
   const {
     values,
     errors,
     handleChange,
     handleSubmit,
-  } = useForm(sendEmail, validate);
+  } = useForm(sendEmail, validate)
 
   return (
     <section className="contact main-section" id="Contact">

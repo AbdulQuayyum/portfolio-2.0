@@ -1,5 +1,5 @@
-import Background from "./Background";
-import Toggler from "./ThemeToggle";
+import Background from "./Background"
+import Toggler from "./ThemeToggle"
 
 export {
     Background,

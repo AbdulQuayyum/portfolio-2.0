@@ -7,7 +7,7 @@ const Data = () => {
   const changingTexts = ["Frontend Engineer", "Backend Engineer", "Mobile Engineer", "Software Engineer"]
   const [text, setText] = useState("")
   const [delta, setDelta] = useState(300 - Math.random() * 100)
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(1)
   const period = 2000
 
   useEffect(() => {
@@ -29,15 +29,15 @@ const Data = () => {
 
       if (!deleting && updatedText === fullText) {
           setDeleting(true)
-      setIndex(prevIndex => prevIndex - 1);
+      setIndex(prevIndex => prevIndex - 1)
           setDelta(period)
       } else if (deleting && updatedText === "") {
           setDeleting(false)
           setLoop(loop + 1)
-          setIndex(1);
+          setIndex(1)
           setDelta(500)
         } else {
-          setIndex(prevIndex => prevIndex + 1);
+          setIndex(prevIndex => prevIndex + 1)
         }
   }
   return (

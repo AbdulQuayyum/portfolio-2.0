@@ -1,7 +1,7 @@
 import React from 'react'
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"
 
-import Index from '../Views/Index';
+import Index from '../Views/Index'
 
 const MainRoutes = () => {
   return (

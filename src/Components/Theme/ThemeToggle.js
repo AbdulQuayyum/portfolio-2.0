@@ -1,9 +1,9 @@
-import React from 'react';
-import { FaSun, FaMoon } from "react-icons/fa";
-import { ThemeContext } from '../../Contexts/ThemeContext';
+import React from 'react'
+import { FaSun, FaMoon } from "react-icons/fa"
+import { ThemeContext } from '../../Contexts/ThemeContext'
 
 const Toggler = () => {
-    const { theme, setTheme } = React.useContext(ThemeContext);
+    const { theme, setTheme } = React.useContext(ThemeContext)
 
     return (
         <div className="transition duration-500 ease-in-out">
@@ -19,7 +19,7 @@ const Toggler = () => {
                 />
             )}
         </div>
-    );
-};
+    )
+}
 
-export default Toggler;
+export default Toggler

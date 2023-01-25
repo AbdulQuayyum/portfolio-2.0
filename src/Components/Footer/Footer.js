@@ -1,7 +1,7 @@
 import React from 'react'
 import { logo } from '../../Assets/Index'
 import { BsGithub, BsTwitter, BsLinkedin, BsInstagram } from "react-icons/bs"
-const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear()
 
 const Footer = () => {
     return (
@@ -36,7 +36,7 @@ const Footer = () => {
                         <BsInstagram />
                     </a>
                 </div>
-                <span className="footer-copy dark:text-[#fff]">{currentYear} &#169; Abdul-Quayyum Alao, All rights reserved</span>
+                <span className="footer-copy dark:text-[#fff]">{currentYear} &#169 Abdul-Quayyum Alao, All rights reserved</span>
             </div>
         </footer>
     )
