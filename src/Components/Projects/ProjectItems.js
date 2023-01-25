@@ -14,11 +14,11 @@ const ProjectItems = ({ item, index }) => {
         </div>
       </div>
       <div className="project-icons-div">
-        <a href={item.project}  target="_blank" rel="noreferrer" className="project-icons">
+        <a href={item.project} target="_blank" rel="noreferrer" className="project-icons">
           <IoEarthOutline className='project-icon dark:text-gray-50' />
           <span className='dark:text-gray-200'>Live Preview</span>
         </a>
-        <a href={item.githubUrl}  target="_blank" rel="noreferrer" className="project-icons">
+        <a href={item.githubUrl} target="_blank" rel="noreferrer" className="project-icons">
           <GrGithub className='project-icon dark:text-gray-50' />
           <span className='dark:text-gray-200'>Source Code</span>
         </a>

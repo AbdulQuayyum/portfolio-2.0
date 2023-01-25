@@ -51,7 +51,7 @@ const Contact = (props) => {
               < SiGmail className='contact-card-icon dark:text-[#fff]' />
               <h3 className="contact-card-title dark:text-gray-200">Email</h3>
               <span className="contact-card-data dark:text-gray-300">alaoabdulquayyumm@gmail.com</span>
-              <a href="mailto:alaoabdulquayyumm@gmail.com" className="contact-button dark:text-[#fff]">
+              <a href="mailto:alaoabdulquayyumm@gmail.com" target="_blank" rel="noreferrer"  className="contact-button dark:text-[#fff]">
                 Contact me {" "} < FaHandPointRight className='contact-button-icon dark:text-[#fff]' />
               </a>
             </div>
@@ -59,7 +59,7 @@ const Contact = (props) => {
               < BsWhatsapp className='contact-card-icon dark:text-[#fff]' />
               <h3 className="contact-card-title dark:text-gray-200">Whatsapp</h3>
               <span className="contact-card-data dark:text-gray-300">+234 807 859 5073</span>
-              <a href="https://api.whatsapp.com/send?phone=2348078595073&text=Hello Abdul-Quayyum, I am" className="contact-button dark:text-[#fff]">
+              <a href="https://api.whatsapp.com/send?phone=2348078595073&text=Heyy Abdul-Quayyum, I am" target="_blank" rel="noreferrer"  className="contact-button dark:text-[#fff]">
                 Contact me {" "} < FaHandPointRight className='contact-button-icon dark:text-[#fff]' />
               </a>
             </div>
@@ -67,7 +67,7 @@ const Contact = (props) => {
               < BsLinkedin className='contact-card-icon dark:text-[#fff]' />
               <h3 className="contact-card-title dark:text-gray-200">LinkedIn</h3>
               <span className="contact-card-data dark:text-gray-300"></span>
-              <a href="https://www.linkedin.com/in/alao-abdul-quayyum-982492218/message" className="contact-button dark:text-[#fff]">
+              <a href="https://www.linkedin.com/in/alao-abdul-quayyum-982492218/message" target="_blank" rel="noreferrer"  className="contact-button dark:text-[#fff]">
                 Contact me {" "} < FaHandPointRight className='contact-button-icon dark:text-[#fff]' />
               </a>
             </div>
