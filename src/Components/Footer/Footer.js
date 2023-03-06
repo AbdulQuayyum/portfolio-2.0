@@ -26,13 +26,13 @@ const Footer = () => {
                     <a href="https://github.com/AbdulQuayyum" target="_blank" rel="noreferrer"  className="home-social-icon dark:text-[#fff]">
                         <BsGithub />
                     </a>
-                    <a href="https://twitter.com/_AbdulQuayyum" target="_blank" rel="noreferrer"  className="home-social-icon dark:text-[#fff]">
+                    <a href="https://twitter.com/TheAbdulQuayyum" target="_blank" rel="noreferrer"  className="home-social-icon dark:text-[#fff]">
                         <BsTwitter />
                     </a>
                     <a href="https://www.linkedin.com/in/alao-abdul-quayyum-982492218/" target="_blank" rel="noreferrer"  className="home-social-icon dark:text-[#fff]">
                         <BsLinkedin />
                     </a>
-                    <a href="https://www.instagram.com/_abdulquayyum/" target="_blank" rel="noreferrer"  className="home-social-icon dark:text-[#fff]">
+                    <a href="https://www.instagram.com/theabdulquayyum/" target="_blank" rel="noreferrer"  className="home-social-icon dark:text-[#fff]">
                         <BsInstagram />
                     </a>
                 </div>
