@@ -5,7 +5,6 @@ import { IoClose } from "react-icons/io5"
 import { MdSegment } from "react-icons/md"
 import { CgFileDocument } from "react-icons/cg"
 import Toggler from '../Theme/ThemeToggle'
-import { logo } from '../../Assets/Index'
 
 const Header = () => {
     window.addEventListener("scroll", function () {
@@ -17,14 +16,15 @@ const Header = () => {
     const [Toggle, ShowMenu] = useState(false)
     const [activeNav, setActiveNav] = useState("#Home")
     return (
-        <header className="main-header dark:bg-[#1c1c24]">
+        <header className="main-header">
             <nav className="nav main-container">
-                <a href="/" className="nav-logo">
-                    <img src={logo} alt="..." />
+                <a href="/" className="nav-logo dark:text-white">
+                    {/* <img src={logo} alt="..." /> */}
+                    Abdul-Quayyum
                 </a>
-                <div className={Toggle ? "nav-menu show-menu dark:bg-[#1c1c24] " : "nav-menu"}>
+                <div className={Toggle ? "nav-menu show-menu" : "nav-menu"}>
                     < IoClose className="nav-close dark:text-[#fff] dark:hover:text-gray-300" onClick={() => ShowMenu(!Toggle)} />
-                    <ul className="nav-list main-grid dark:bg-[#1c1c24]">
+                    <ul className="nav-list main-grid">
                         <li className="nav-item">
                             <a href="#Home" onClick={() => setActiveNav("#Home")} className={activeNav === "#Home" ? "dark:text-[#fff] nav-link active-link dark:hover:text-gray-300" : "dark:text-[#fff] nav-link dark:hover:text-gray-300"}>
                                 <TbHome className='nav-icon' />

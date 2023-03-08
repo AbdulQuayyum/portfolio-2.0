@@ -42,11 +42,15 @@ const Testimonials = () => {
         }}
         modules={[Pagination, Autoplay]}
         className="testimonial-container">
-        {Data.map(({ id, image, name, occupation, description }) => {
+        {Data.map(({ id, image, name, linkedInLink, occupation, description }) => {
           return (
             <SwiperSlide className="testimonial-card  dark:bg-transparent dark:border-[#fff] dark:border-[1px]" key={id}>
               <img src={image} alt={name} className="testimonial-img" />
-              <h3 className="testimonial-name dark:text-[#fff]">{name}</h3>
+              <h3 className="testimonial-name dark:text-[#fff]">
+                <a href={linkedInLink} target="_blank" rel="noopener noreferrer">
+                  {name}
+                </a>
+              </h3>
               <span className="testimonial-occuption dark:text-gray-200">{occupation}</span>
               <p className="testimonial-description dark:text-gray-300">{description}</p>
             </SwiperSlide>

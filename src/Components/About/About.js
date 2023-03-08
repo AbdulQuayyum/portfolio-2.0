@@ -17,7 +17,7 @@ const About = () => {
         <div className="about-data">
           <Info />
           <p className="about-description dark:text-[#fff]">
-            I am a Software Engineer using JavaScript || TypeScript || React.Js || Next.Js || Vue.Js || Express.Js || Next.Js || Three.Js || Python || Flutter || Dart || React-Native Technologies to provide innovative and efficient solutions to problems, provide more efficient solutions to available solutions.
+            I am a Software Engineer with an artistic touch using JavaScript || TypeScript || React.Js || Next.Js || Vue.Js || Express.Js || Next.Js || Three.Js || Python || Flutter || Dart || React-Native Technologies to provide innovative and efficient solutions to problems, provide more efficient solutions to available solutions.
           </p>
           <a download="Abdul-Quayyum's Resume" href={resume} className="main-button button-flex dark:bg-transparent dark:border-[#fff] dark:border-2">
             Check out my CV

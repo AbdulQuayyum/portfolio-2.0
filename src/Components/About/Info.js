@@ -17,7 +17,7 @@ const Info = () => {
         <div className="about-box dark:bg-transparent dark:border-[#fff] dark:border-[1px]">
             <BsHeadset className="about-icon dark:text-[#fff]"/>
             <h3 className="about-title dark:text-[#fff]">Support</h3>
-            <span className="about-subtitle dark:text-[#fff]">Online 24/7</span>
+            <span className="about-subtitle dark:text-[#fff]">18 Hours a day</span>
         </div>
     </div>
   )

@@ -101,7 +101,7 @@ const Data = () => {
        I'm Abdul-Quayyum, a {text}
       </h3>
       <p className="home-description dark:text-[#fff]">
-        I am an efficient Software Engineer, and I am very passionate and dedicated to my work.
+        I like to think of myself as an Artist, Aesthete and a Software Engineer.
       </p>
       {/* <a href="#Contact" id="contact" className='button button-flex'>
         Drop a message

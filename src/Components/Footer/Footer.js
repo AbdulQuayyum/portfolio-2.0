@@ -1,5 +1,4 @@
 import React from 'react'
-import { logo } from '../../Assets/Index'
 import { BsGithub, BsTwitter, BsLinkedin, BsInstagram } from "react-icons/bs"
 const currentYear = new Date().getFullYear()
 
@@ -8,8 +7,8 @@ const Footer = () => {
         <footer className='footer dark:border-t-[1px] dark:border-[#fff]'>
             <div className="footer-container main-container">
                 <h1 className="footer-title">
-                
-                <img src={logo} className="h-24" alt="..." />
+                Abdul-Quayyum Alao
+                {/* <img src={logo} className="h-24" alt="..." /> */}
                 </h1>
                 <ul className="footer-list">
                     <li>

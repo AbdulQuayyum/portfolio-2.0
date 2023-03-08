@@ -15,6 +15,7 @@ import kiki from "./Images/kiki.png"
 import larkun from "./Images/larkun.png"
 import landing from "./Images/landing.png"
 import logo from "./Images/logo.png"
+import mohmusa from "./Images/mohmusa.png"
 import muhees from "./Images/muhees.png"
 import nftapp from "./Images/nftapp.jpg"
 import nike from "./Images/nike.png"
@@ -47,6 +48,7 @@ export {
     larkun,
     landing,
     logo,
+    mohmusa,
     muhees,
     nftapp,
     nike,
