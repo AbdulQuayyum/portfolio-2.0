@@ -78,7 +78,7 @@
     }
 
     .nav {
-        height: var(--header-height);
+        height: calc(var(--header-height) + 0.5rem);
     }
 
     .nav-menu {

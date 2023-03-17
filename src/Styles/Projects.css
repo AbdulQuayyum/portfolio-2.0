@@ -133,12 +133,20 @@
 }
 
 /* For smaller devices */
+@media only screen and (max-width: 440px) {
+    .project-filters {
+        column-gap: 0.25rem;
+    }
+}
+
+@media only screen and (max-width: 406px) {
+    .project-filters {
+        column-gap: 0rem;
+    }
+}
+
 @media screen and (max-width: 350px) {
     .project-item {
         font-size: var(--small-font-size);
-    }
-
-    .project-filters {
-        column-gap: 0.25rem;
     }
 }

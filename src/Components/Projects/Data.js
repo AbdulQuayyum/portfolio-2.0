@@ -7,7 +7,7 @@ export const projectsData = [
         id: 1,
         image: cat,
         name: "Cats Breeds",
-        category: "Frontend",
+        category: "Full Stack",
         githubUrl: "https://github.com/AbdulQuayyum/Cat-Breeds.git",
         project: "https://cats-amber.vercel.app/",
         description: "A Web Application to showcase some breeds of cats",
@@ -125,7 +125,7 @@ export const projectsData = [
         id: 9,
         image: clone,
         name: "Netflix Clone",
-        category: "Backend",
+        category: "Full Stack",
         githubUrl: "https://github.com/AbdulQuayyum/MERN-Netflix-clone/tree/main/api",
         project: "https://github.com/AbdulQuayyum/MERN-Netflix-clone/tree/main/api",
         description: "An API service for a Netflix clone.",
@@ -181,7 +181,7 @@ export const projectsData = [
         id: 13,
         image: imggen,
         name: "Image Generator",
-        category: "Backend",
+        category: "Full Stack",
         githubUrl: "https://github.com/AbdulQuayyum/project-image-generator.git",
         project: "https://project-image-generator.vercel.app/",
         description: "A text to image web application created using Node.js, Express, Openai, MongoDB, Cloudinary, React.js, Vite.js, Tailwind css",
@@ -249,5 +249,8 @@ export const projectsNav = [
     },
     {
         name: "Mobile"
+    },
+    {
+        name: "Full Stack"
     },
 ]
