@@ -1,10 +1,10 @@
-import { aiweb, auth, cat, clone, course, crowdfunding, imggen, softgames, softCard, softtours, uni, landing, portfolio, chatapp, nftapp, weather } from "../../Assets/Index"
+import { aiweb, auth, cat, course, crowdfunding, imggen, softgames, softCard, softtours, uni, landing, portfolio, chatapp, nftapp, weather, softproperties } from "../../Assets/Index"
 
-import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiSass, SiReact, SiNextdotjs, SiMongodb, SiExpo, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiSolidity, SiFirebase, SiDart, SiFlutter } from "react-icons/si"
+import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiSass, SiReact, SiMui, SiNextdotjs, SiMongodb, SiExpo, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiSolidity, SiFirebase, SiDart, SiFlutter } from "react-icons/si"
 import { TbBrandReactNative } from "react-icons/tb"
 export const projectsData = [
     {
-        id: 1,
+        id: 0,
         image: cat,
         name: "Cats Breeds",
         category: "Full Stack",
@@ -12,8 +12,8 @@ export const projectsData = [
         project: "https://cats-amber.vercel.app/",
         description: "A Web Application to showcase some breeds of cats",
         tech: [
-            < SiTypescript />,
             < SiJavascript />,
+            < SiTypescript />,
             < SiNextdotjs />,
             < SiCss3 />,
             < SiTailwindcss />,
@@ -21,7 +21,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 2,
+        id: 1,
         image: softgames,
         name: "Soft Games",
         category: "Frontend",
@@ -29,13 +29,14 @@ export const projectsData = [
         project: "https://soft-games.vercel.app/",
         description: "A web application using Next.js, tailwind and framer motion to create a landing page for a game platform.",
         tech: [
+            < SiJavascript />,
             < SiNextdotjs />,
             < SiFramer />,
             < SiTailwindcss />,
         ]
     },
     {
-        id: 3,
+        id: 2,
         image: aiweb,
         name: "AI Website",
         category: "Frontend",
@@ -43,12 +44,13 @@ export const projectsData = [
         project: "https://ai-website-rose.vercel.app/",
         description: "An AI Landing page describing the product",
         tech: [
+            < SiJavascript />,
             < SiReact />,
             < SiCss3 />,
         ]
     },
     {
-        id: 4,
+        id: 3,
         image: softtours,
         name: "A Tour Guide Site",
         category: "Frontend",
@@ -62,7 +64,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 5,
+        id: 4,
         image: landing,
         name: "NFT App Laning Page",
         category: "Frontend",
@@ -70,13 +72,14 @@ export const projectsData = [
         project: "https://landing-website-xi.vercel.app/",
         description: "A Landing page describing the NFT App I created",
         tech: [
+            < SiJavascript />,
             < SiReact />,
             < SiTailwindcss />,
             < SiCss3 />,
         ]
     },
     {
-        id: 6,
+        id: 5,
         image: portfolio,
         name: "Previous Portfolio Website",
         category: "Frontend",
@@ -92,7 +95,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 7,
+        id: 6,
         image: crowdfunding,
         name: "Soft Crowdfunding Platform",
         category: "Frontend",
@@ -107,7 +110,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 8,
+        id: 7,
         image: softCard,
         name: "Soft Card",
         category: "Frontend",
@@ -122,21 +125,24 @@ export const projectsData = [
         ]
     },
     {
-        id: 9,
-        image: clone,
-        name: "Netflix Clone",
+        id: 8,
+        image: softproperties ,
+        name: "Soft Properties",
         category: "Full Stack",
-        githubUrl: "https://github.com/AbdulQuayyum/MERN-Netflix-clone/tree/main/api",
-        project: "https://github.com/AbdulQuayyum/MERN-Netflix-clone/tree/main/api",
-        description: "An API service for a Netflix clone.",
+        githubUrl: "https://github.com/AbdulQuayyum/soft-properties",
+        project: "https://soft-properties.vercel.app/",
+        description: "A Real Estate Properties dashboard using Refine, React, Typescript, Apex Charts, mui for the frontend and Cloudinary, cors, Express and MONGO DB",
         tech: [
-            < SiNodedotjs />,
+            < SiJavascript />,
+            < SiTypescript />,
+            < SiReact />,
+            < SiMui />,
             < SiExpress />,
             < SiMongodb />,
         ]
     },
     {
-        id: 10,
+        id: 9,
         image: auth,
         name: "Authentication API",
         category: "Backend",
@@ -144,13 +150,14 @@ export const projectsData = [
         project: "https://github.com/AbdulQuayyum/Authentication-API",
         description: "An authentication API service.",
         tech: [
+            < SiJavascript />,
             < SiNodedotjs />,
             < SiExpress />,
             < SiMongodb />,
         ]
     },
     {
-        id: 11,
+        id: 10,
         image: course,
         name: "Course API",
         category: "Backend",
@@ -158,13 +165,14 @@ export const projectsData = [
         project: "https://github.com/AbdulQuayyum/course-api.git",
         description: "An API service to group the courses I am offering in school.",
         tech: [
+            < SiJavascript />,
             < SiNodedotjs />,
             < SiExpress />,
             < SiMongodb />,
         ]
     },
     {
-        id: 12,
+        id: 11,
         image: uni,
         name: "University API",
         category: "Backend",
@@ -172,20 +180,22 @@ export const projectsData = [
         project: "https://github.com/AbdulQuayyum/university-api.git",
         description: "An API service to group some selected universities and more informations.",
         tech: [
+            < SiJavascript />,
             < SiNodedotjs />,
             < SiExpress />,
             < SiMongodb />,
         ]
     },
     {
-        id: 13,
+        id: 12,
         image: imggen,
         name: "Image Generator",
         category: "Full Stack",
         githubUrl: "https://github.com/AbdulQuayyum/project-image-generator.git",
         project: "https://project-image-generator.vercel.app/",
-        description: "A text to image web application created using Node.js, Express, Openai, MongoDB, Cloudinary, React.js, Vite.js, Tailwind css",
+        description: "A text to image web application created using Node.js, Express, Openai, MongoDB, Cloudinary for the Backend and React.js, Vite.js, Tailwind css for the Frontend",
         tech: [
+            < SiJavascript />,
             < SiNodedotjs />,
             < SiExpress />,
             < SiOpenai />,
@@ -196,7 +206,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 14,
+        id: 13,
         image: chatapp ,
         name: "Chat App",
         category: "Mobile",
@@ -204,13 +214,14 @@ export const projectsData = [
         project: "https://github.com/AbdulQuayyum/dev-stage.git",
         description: "A Chatting mobile application using React Native, Expo, Firebase and other dependencies.",
         tech: [
+            < SiJavascript />,
             < TbBrandReactNative />,
             < SiFirebase />,
             < SiExpo />,
         ]
     },
     {
-        id: 15,
+        id: 14,
         image: nftapp ,
         name: "Nft App",
         category: "Mobile",
@@ -218,12 +229,13 @@ export const projectsData = [
         project: "https://github.com/AbdulQuayyum/React-Native-NFT-App.git",
         description: "A NFT mobile application using React Native, Expo and other dependencies.",
         tech: [
+            < SiJavascript />,
             < TbBrandReactNative />,
             < SiFirebase />,
         ]
     },
     {
-        id: 16,
+        id: 15,
         image: weather ,
         name: "Weather App",
         category: "Mobile",
@@ -231,8 +243,25 @@ export const projectsData = [
         project: "https://github.com/AbdulQuayyum/weather_app.git",
         description: "A Weather mobile application using Flutter, Dart and other dependencies.",
         tech: [
+            < SiDart />, 
             < SiFlutter />,
-            < SiDart />,
+        ]
+    },
+    {
+        id: 16,
+        image: softproperties ,
+        name: "Soft Properties",
+        category: "Full Stack",
+        githubUrl: "https://github.com/AbdulQuayyum/soft-properties",
+        project: "https://soft-properties.vercel.app/",
+        description: "A Real Estate Properties dashboard using Refine, React, Typescript, Apex Charts, mui for the frontend and Cloudinary, cors, Express and MONGO DB",
+        tech: [
+            < SiJavascript />,
+            < SiTypescript />,
+            < SiReact />,
+            < SiMui />,
+            < SiExpress />,
+            < SiMongodb />,
         ]
     },
 ]

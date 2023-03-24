@@ -6,7 +6,6 @@ import auth from "./Images/auth.png"
 import cat from "./Images/cat.png"
 import cat2 from "./Images/cat.jpeg"
 import chatapp from "./Images/chatapp.jpg"
-import clone from "./Images/clone.png"
 import course from "./Images/course.png"
 import crowdfunding from "./Images/crowdfunding.png"
 import gig from "./Images/gig.png"
@@ -22,6 +21,7 @@ import nike from "./Images/nike.png"
 import portfolio from "./Images/portfolio.png"
 import softCard from "./Images/softCard.png"
 import softgames from "./Images/softgames.png"
+import softproperties from "./Images/softproperties.png"
 import softtours from "./Images/softtours.png"
 import surdykbaba from "./Images/surdykbaba.png"
 import uni from "./Images/uni.png"
@@ -39,7 +39,6 @@ export {
     cat,
     cat2,
     chatapp,
-    clone,
     course,
     crowdfunding,
     gig,
@@ -55,6 +54,7 @@ export {
     portfolio,
     softCard,
     softgames,
+    softproperties,
     softtours,
     surdykbaba,
     uni,
