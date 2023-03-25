@@ -54,7 +54,7 @@ export const projectsData = [
         image: softtours,
         name: "A Tour Guide Site",
         category: "Frontend",
-        githubUrl: "https://github.com/AbdulQuayyum/Tour-guide-site.git",
+        githubUrl: "https://github.com/AbdulQuayyum/Project-18/tree/main/(Project%2002)Tour%20Guide%20Site",
         project: "https://tour-guide-site.vercel.app/",
         description: "A Tour Guide landing page.",
         tech: [
