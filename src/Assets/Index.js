@@ -21,6 +21,7 @@ import nike from "./Images/nike.png"
 import portfolio from "./Images/portfolio.png"
 import softCard from "./Images/softCard.png"
 import softgames from "./Images/softgames.png"
+import softmedia from "./Images/softmedia.png"
 import softproperties from "./Images/softproperties.png"
 import softtours from "./Images/softtours.png"
 import surdykbaba from "./Images/surdykbaba.png"
@@ -54,6 +55,7 @@ export {
     portfolio,
     softCard,
     softgames,
+    softmedia,
     softproperties,
     softtours,
     surdykbaba,

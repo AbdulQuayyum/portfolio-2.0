@@ -1,4 +1,4 @@
-import { aiweb, auth, cat, course, crowdfunding, imggen, softgames, softCard, softtours, uni, landing, portfolio, chatapp, nftapp, weather, softproperties } from "../../Assets/Index"
+import { aiweb, auth, cat, course, crowdfunding, imggen, softgames, softCard, softtours, uni, landing, portfolio, chatapp, nftapp, weather, softproperties, softmedia } from "../../Assets/Index"
 
 import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiSass, SiReact, SiMui, SiNextdotjs, SiMongodb, SiExpo, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiSolidity, SiFirebase, SiDart, SiFlutter } from "react-icons/si"
 import { TbBrandReactNative } from "react-icons/tb"
@@ -248,20 +248,16 @@ export const projectsData = [
         ]
     },
     {
-        id: 16,
-        image: softproperties ,
-        name: "Soft Properties",
+        id: 17,
+        image: softmedia ,
+        name: "Soft Media",
         category: "Full Stack",
-        githubUrl: "https://github.com/AbdulQuayyum/soft-properties",
-        project: "https://soft-properties.vercel.app/",
-        description: "A Real Estate Properties dashboard using Refine, React, Typescript, Apex Charts, mui for the frontend and Cloudinary, cors, Express and MONGO DB",
+        githubUrl: "https://github.com/AbdulQuayyum/soft-media.git",
+        project: "https://soft-media.vercel.app/",
+        description: "A social media web application where Images can be shared and enjoyed built using React, sanity, react-oauth/google, react-masonry css, react-loader-spinner and some other packages for the frontend while using sanity for the backend ",
         tech: [
             < SiJavascript />,
-            < SiTypescript />,
             < SiReact />,
-            < SiMui />,
-            < SiExpress />,
-            < SiMongodb />,
         ]
     },
 ]
