@@ -1,6 +1,6 @@
-import { aiweb, auth, cat, course, crowdfunding, imggen, softgames, softCard, softtours, uni, landing, portfolio, chatapp, nftapp, weather, softproperties, softmedia } from "../../Assets/Index"
+import { aiweb, auth, cat, chatapp, course, imggen, landing, nftapp, softgames, softmedia, softproperties, softtours, uni, weather, } from "../../Assets/Index"
 
-import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiSass, SiReact, SiMui, SiNextdotjs, SiMongodb, SiExpo, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiSolidity, SiFirebase, SiDart, SiFlutter } from "react-icons/si"
+import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiSass, SiReact, SiMui, SiNextdotjs, SiMongodb, SiExpo, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiFirebase, SiDart, SiFlutter } from "react-icons/si"
 import { TbBrandReactNative } from "react-icons/tb"
 export const projectsData = [
     {
@@ -80,53 +80,20 @@ export const projectsData = [
     },
     {
         id: 5,
-        image: portfolio,
-        name: "Previous Portfolio Website",
-        category: "Frontend",
-        githubUrl: "https://github.com/AbdulQuayyum/portfolio.git",
-        project: "https://alao-abdul-quayyum-portfolio.vercel.app/",
-        description: "A Portfolio website I created",
+        image: softmedia,
+        name: "Soft Media",
+        category: "Full Stack",
+        githubUrl: "https://github.com/AbdulQuayyum/soft-media.git",
+        project: "https://soft-media.vercel.app/",
+        description: "A social media web application where Images can be shared and enjoyed built using React, sanity, react-oauth/google, react-masonry css, react-loader-spinner and some other packages for the frontend while using sanity for the backend ",
         tech: [
-            < SiNextdotjs />,
-            < SiTypescript />,
-            < SiTailwindcss />,
-            < SiCss3 />,
-            < SiFramer />,
+            < SiJavascript />,
+            < SiReact />,
         ]
     },
     {
         id: 6,
-        image: crowdfunding,
-        name: "Soft Crowdfunding Platform",
-        category: "Frontend",
-        githubUrl: "https://github.com/AbdulQuayyum/crowdfunding_platform.git",
-        project: "https://crowdfunding-platform-theta.vercel.app/",
-        description: "A web3 application using Vite, Thirdweb to create a cryptocurrency based crowdfunding project (Followed a YouTube Tutorial)",
-        tech: [
-            < SiVite />,
-            < SiReact />,
-            < SiTailwindcss />,
-            < SiSolidity />,
-        ]
-    },
-    {
-        id: 7,
-        image: softCard,
-        name: "Soft Card",
-        category: "Frontend",
-        githubUrl: "https://github.com/AbdulQuayyum/soft-card.git",
-        project: "https://soft-card-ashen.vercel.app/",
-        description: "A web3 application using Vite, Solidity to create a NFT card game (Followed a YouTube Tutorial)",
-        tech: [
-            < SiVite />,
-            < SiReact />,
-            < SiTailwindcss />,
-            < SiSolidity />,
-        ]
-    },
-    {
-        id: 8,
-        image: softproperties ,
+        image: softproperties,
         name: "Soft Properties",
         category: "Full Stack",
         githubUrl: "https://github.com/AbdulQuayyum/soft-properties",
@@ -142,52 +109,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 9,
-        image: auth,
-        name: "Authentication API",
-        category: "Backend",
-        githubUrl: "https://github.com/AbdulQuayyum/Authentication-API",
-        project: "https://github.com/AbdulQuayyum/Authentication-API",
-        description: "An authentication API service.",
-        tech: [
-            < SiJavascript />,
-            < SiNodedotjs />,
-            < SiExpress />,
-            < SiMongodb />,
-        ]
-    },
-    {
-        id: 10,
-        image: course,
-        name: "Course API",
-        category: "Backend",
-        githubUrl: "https://github.com/AbdulQuayyum/course-api.git",
-        project: "https://github.com/AbdulQuayyum/course-api.git",
-        description: "An API service to group the courses I am offering in school.",
-        tech: [
-            < SiJavascript />,
-            < SiNodedotjs />,
-            < SiExpress />,
-            < SiMongodb />,
-        ]
-    },
-    {
-        id: 11,
-        image: uni,
-        name: "University API",
-        category: "Backend",
-        githubUrl: "https://github.com/AbdulQuayyum/university-api.git",
-        project: "https://github.com/AbdulQuayyum/university-api.git",
-        description: "An API service to group some selected universities and more informations.",
-        tech: [
-            < SiJavascript />,
-            < SiNodedotjs />,
-            < SiExpress />,
-            < SiMongodb />,
-        ]
-    },
-    {
-        id: 12,
+        id: 7,
         image: imggen,
         name: "Image Generator",
         category: "Full Stack",
@@ -206,8 +128,53 @@ export const projectsData = [
         ]
     },
     {
-        id: 13,
-        image: chatapp ,
+        id: 8,
+        image: auth,
+        name: "Authentication API",
+        category: "Backend",
+        githubUrl: "https://github.com/AbdulQuayyum/Authentication-API",
+        project: "https://github.com/AbdulQuayyum/Authentication-API",
+        description: "An authentication API service.",
+        tech: [
+            < SiJavascript />,
+            < SiNodedotjs />,
+            < SiExpress />,
+            < SiMongodb />,
+        ]
+    },
+    {
+        id: 9,
+        image: course,
+        name: "Course API",
+        category: "Backend",
+        githubUrl: "https://github.com/AbdulQuayyum/course-api.git",
+        project: "https://github.com/AbdulQuayyum/course-api.git",
+        description: "An API service to group the courses I am offering in school.",
+        tech: [
+            < SiJavascript />,
+            < SiNodedotjs />,
+            < SiExpress />,
+            < SiMongodb />,
+        ]
+    },
+    {
+        id: 10,
+        image: uni,
+        name: "University API",
+        category: "Backend",
+        githubUrl: "https://github.com/AbdulQuayyum/university-api.git",
+        project: "https://github.com/AbdulQuayyum/university-api.git",
+        description: "An API service to group some selected universities and more informations.",
+        tech: [
+            < SiJavascript />,
+            < SiNodedotjs />,
+            < SiExpress />,
+            < SiMongodb />,
+        ]
+    },
+    {
+        id: 11,
+        image: chatapp,
         name: "Chat App",
         category: "Mobile",
         githubUrl: "https://github.com/AbdulQuayyum/dev-stage.git",
@@ -221,8 +188,8 @@ export const projectsData = [
         ]
     },
     {
-        id: 14,
-        image: nftapp ,
+        id: 12,
+        image: nftapp,
         name: "Nft App",
         category: "Mobile",
         githubUrl: "https://github.com/AbdulQuayyum/React-Native-NFT-App.git",
@@ -235,29 +202,16 @@ export const projectsData = [
         ]
     },
     {
-        id: 15,
-        image: weather ,
+        id: 13,
+        image: weather,
         name: "Weather App",
         category: "Mobile",
         githubUrl: "https://github.com/AbdulQuayyum/weather_app.git",
         project: "https://github.com/AbdulQuayyum/weather_app.git",
         description: "A Weather mobile application using Flutter, Dart and other dependencies.",
         tech: [
-            < SiDart />, 
+            < SiDart />,
             < SiFlutter />,
-        ]
-    },
-    {
-        id: 17,
-        image: softmedia ,
-        name: "Soft Media",
-        category: "Full Stack",
-        githubUrl: "https://github.com/AbdulQuayyum/soft-media.git",
-        project: "https://soft-media.vercel.app/",
-        description: "A social media web application where Images can be shared and enjoyed built using React, sanity, react-oauth/google, react-masonry css, react-loader-spinner and some other packages for the frontend while using sanity for the backend ",
-        tech: [
-            < SiJavascript />,
-            < SiReact />,
         ]
     },
 ]

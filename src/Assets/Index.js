@@ -1,13 +1,10 @@
 // Images
-import abdulquayyum from "./Images/abdulquayyum.jpg"
 import ahmid from "./Images/ahmid.jpeg"
 import aiweb from "./Images/aiweb.png"
 import auth from "./Images/auth.png"
 import cat from "./Images/cat.png"
-import cat2 from "./Images/cat.jpeg"
 import chatapp from "./Images/chatapp.jpg"
 import course from "./Images/course.png"
-import crowdfunding from "./Images/crowdfunding.png"
 import gig from "./Images/gig.png"
 import imggen from "./Images/img-gen.png"
 import kiki from "./Images/kiki.png"
@@ -18,8 +15,6 @@ import mohmusa from "./Images/mohmusa.png"
 import muhees from "./Images/muhees.png"
 import nftapp from "./Images/nftapp.jpg"
 import nike from "./Images/nike.png"
-import portfolio from "./Images/portfolio.png"
-import softCard from "./Images/softCard.png"
 import softgames from "./Images/softgames.png"
 import softmedia from "./Images/softmedia.png"
 import softproperties from "./Images/softproperties.png"
@@ -33,15 +28,12 @@ import yusufuabu from "./Images/yusufuabu.png"
 import resume from "./Documents/resume.pdf"
 
 export {
-    abdulquayyum,
     ahmid,
     aiweb,
     auth,
     cat,
-    cat2,
     chatapp,
     course,
-    crowdfunding,
     gig,
     imggen,
     kiki,
@@ -52,8 +44,6 @@ export {
     muhees,
     nftapp,
     nike,
-    portfolio,
-    softCard,
     softgames,
     softmedia,
     softproperties,
