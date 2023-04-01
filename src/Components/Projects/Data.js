@@ -1,4 +1,4 @@
-import { aiweb, auth, cat, chatapp, course, imggen, landing, nftapp, softgames, softmedia, softproperties, softtours, uni, weather, } from "../../Assets/Index"
+import { aiweb, auth, cat, chatapp, course, imggen, landing, nftapp, softcodehelper, softgames, softmedia, softproperties, softtours, uni, weather, } from "../../Assets/Index"
 
 import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiSass, SiReact, SiMui, SiNextdotjs, SiMongodb, SiExpo, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiFirebase, SiDart, SiFlutter } from "react-icons/si"
 import { TbBrandReactNative } from "react-icons/tb"
@@ -129,6 +129,24 @@ export const projectsData = [
     },
     {
         id: 8,
+        image: softcodehelper,
+        name: "Soft Code Helper",
+        category: "Full Stack",
+        githubUrl: "https://github.com/AbdulQuayyum/soft-code-helper.git",
+        project: "https://soft-code-helper.vercel.app/",
+        description: "Your AI Code Helper built using openai's 'Natural language to OpenAI API'",
+        tech: [
+            < SiJavascript />,
+            < SiNodedotjs />,
+            < SiExpress />,
+            < SiOpenai />,
+            < SiHtml5 />,
+            < SiCss3 />,
+            < SiVite />,
+        ]
+    },
+    {
+        id: 11,
         image: auth,
         name: "Authentication API",
         category: "Backend",
@@ -173,7 +191,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 11,
+        id: 14,
         image: chatapp,
         name: "Chat App",
         category: "Mobile",
