@@ -15,6 +15,7 @@ import mohmusa from "./Images/mohmusa.png"
 import muhees from "./Images/muhees.png"
 import nftapp from "./Images/nftapp.jpg"
 import nike from "./Images/nike.png"
+import softcodehelper from "./Images/softcodehelper.png"
 import softgames from "./Images/softgames.png"
 import softmedia from "./Images/softmedia.png"
 import softproperties from "./Images/softproperties.png"
@@ -44,6 +45,7 @@ export {
     muhees,
     nftapp,
     nike,
+    softcodehelper,
     softgames,
     softmedia,
     softproperties,
