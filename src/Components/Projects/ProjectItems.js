@@ -4,7 +4,7 @@ import { IoEarthOutline } from "react-icons/io5"
 
 const ProjectItems = ({ item, index }) => {
   return (
-    <div className="project-card dark:bg-transparent dark:border-[#fff] dark:border-[1px]" key={index}>
+    <div className="project-card dark:bg-transparent dark:border-[#fff] dark:border-[1px]" key={item.id = index}>
       <div>
         <img src={item.image} alt="..." className='project-img' />
         <h3 className="project-title dark:text-[#fff]">{item.name}</h3>

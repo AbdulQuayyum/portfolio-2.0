@@ -1,7 +1,8 @@
-import { aiweb, auth, cat, chatapp, course, imggen, landing, nftapp, softcodehelper, softgames, softmedia, softproperties, softtours, uni, weather, } from "../../Assets/Index"
+import {auth, cat, chatapp, course, imggen, landing, nftapp, softcodehelper, softgames, softmedia, softmediav2, softproperties, softtours, uni, weather, } from "../../Assets/Index"
 
 import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiSass, SiReact, SiMui, SiNextdotjs, SiMongodb, SiExpo, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiFirebase, SiDart, SiFlutter } from "react-icons/si"
 import { TbBrandReactNative } from "react-icons/tb"
+import { ImGoogle } from "react-icons/im"
 export const projectsData = [
     {
         id: 0,
@@ -10,7 +11,7 @@ export const projectsData = [
         category: "Full Stack",
         githubUrl: "https://github.com/AbdulQuayyum/Cat-Breeds.git",
         project: "https://cats-amber.vercel.app/",
-        description: "A Web Application to showcase some breeds of cats",
+        description: "A Web Application to showcase some breeds of cats, built using Next.js, Typescript, Tailwind css for the frontend and supabase for the backend",
         tech: [
             < SiJavascript />,
             < SiTypescript />,
@@ -33,20 +34,6 @@ export const projectsData = [
             < SiNextdotjs />,
             < SiFramer />,
             < SiTailwindcss />,
-        ]
-    },
-    {
-        id: 2,
-        image: aiweb,
-        name: "AI Website",
-        category: "Frontend",
-        githubUrl: "https://github.com/AbdulQuayyum/ai-website.git",
-        project: "https://ai-website-rose.vercel.app/",
-        description: "An AI Landing page describing the product",
-        tech: [
-            < SiJavascript />,
-            < SiReact />,
-            < SiCss3 />,
         ]
     },
     {
@@ -89,10 +76,26 @@ export const projectsData = [
         tech: [
             < SiJavascript />,
             < SiReact />,
+            < ImGoogle />
         ]
     },
     {
         id: 6,
+        image: softmediav2,
+        name: "Soft Media v2",
+        category: "Full Stack",
+        githubUrl: "https://github.com/AbdulQuayyum/soft-media-2.0.git",
+        project: "https://soft-media-2-0.vercel.app/",
+        description: "A social media web application where Videos can be shared and enjoyed built using React, sanity, react-oauth/google and some other packages for the frontend while using sanity for the backend ",
+        tech: [
+            < SiTypescript />,
+            < SiNextdotjs />,
+            < SiJavascript />,
+            < ImGoogle />
+        ]
+    },
+    {
+        id: 7,
         image: softproperties,
         name: "Soft Properties",
         category: "Full Stack",
@@ -109,7 +112,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 7,
+        id: 8,
         image: imggen,
         name: "Image Generator",
         category: "Full Stack",
@@ -128,7 +131,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 8,
+        id: 9,
         image: softcodehelper,
         name: "Soft Code Helper",
         category: "Full Stack",
@@ -146,7 +149,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 11,
+        id: 10,
         image: auth,
         name: "Authentication API",
         category: "Backend",
@@ -161,7 +164,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 9,
+        id: 11,
         image: course,
         name: "Course API",
         category: "Backend",
@@ -176,7 +179,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 10,
+        id: 12,
         image: uni,
         name: "University API",
         category: "Backend",
@@ -191,7 +194,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 14,
+        id: 13,
         image: chatapp,
         name: "Chat App",
         category: "Mobile",
@@ -206,7 +209,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 12,
+        id: 14,
         image: nftapp,
         name: "Nft App",
         category: "Mobile",
@@ -220,7 +223,7 @@ export const projectsData = [
         ]
     },
     {
-        id: 13,
+        id: 15,
         image: weather,
         name: "Weather App",
         category: "Mobile",

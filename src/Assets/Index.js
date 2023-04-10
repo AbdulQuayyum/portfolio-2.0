@@ -1,6 +1,5 @@
 // Images
 import ahmid from "./Images/ahmid.jpeg"
-import aiweb from "./Images/aiweb.png"
 import auth from "./Images/auth.png"
 import cat from "./Images/cat.png"
 import chatapp from "./Images/chatapp.jpg"
@@ -18,6 +17,7 @@ import nike from "./Images/nike.png"
 import softcodehelper from "./Images/softcodehelper.png"
 import softgames from "./Images/softgames.png"
 import softmedia from "./Images/softmedia.png"
+import softmediav2 from "./Images/softmediav2.png"
 import softproperties from "./Images/softproperties.png"
 import softtours from "./Images/softtours.png"
 import surdykbaba from "./Images/surdykbaba.png"
@@ -30,7 +30,6 @@ import resume from "./Documents/resume.pdf"
 
 export {
     ahmid,
-    aiweb,
     auth,
     cat,
     chatapp,
@@ -48,6 +47,7 @@ export {
     softcodehelper,
     softgames,
     softmedia,
+    softmediav2,
     softproperties,
     softtours,
     surdykbaba,
