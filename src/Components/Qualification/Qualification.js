@@ -105,7 +105,7 @@ const Qualification = () => {
                                     <span className="qualification-subtitle dark:text-[#fff]">D'Accubin - Internship</span>
                                     <div className=" dark:text-gray-400">
                                         < BsCalendar3 style={{ marginRight: "5px" }} />
-                                        May 2022 - Present
+                                        May 2022 - December 2022
                                     </div>
                                 </div>
                             </div>

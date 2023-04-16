@@ -155,6 +155,7 @@
 
     .skills-box {
         display: grid;
+        row-gap: 15px;
         grid-template-columns: repeat(2);
     }
 
