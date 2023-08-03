@@ -1,4 +1,8 @@
 import React, { useState } from 'react'
+import { motion } from "framer-motion";
+
+import { FadeInAnimation, StaggerContainer } from '../../Utilities/Motion/Motion';
+import { TitleText, TypingText } from '../Index';
 import { HiCode } from "react-icons/hi"
 import { MdCloseFullscreen } from "react-icons/md"
 import { FaHandPointRight } from "react-icons/fa"
@@ -12,16 +16,23 @@ const Services = () => {
   const toggleTab = (index) => {
     setToggle(index)
   }
-  
+
   return (
-    <section className='services main-section' id='Services'>
-      <h2 className="section-title dark:text-[#fff]">
-        Services
-      </h2>
-      <span className="section-subtitle dark:text-gray-400">
-        What does Abdul-Quayyum offer?
-      </span>
-      <div className="services-container main-container main-grid">
+    <motion.section
+      initial="hidden"
+      variants={StaggerContainer}
+      viewport={{ once: false, amount: 0.25 }}
+      whileInView="show"
+      className='services main-section' id='Services'>
+      <TitleText
+        title="Services"
+        textStyles="section-title dark:text-[#fff]" />
+      <TypingText
+        title="What does Abdul-Quayyum offer?"
+        textStyles="section-subtitle dark:text-gray-400" />
+      <motion.div
+        variants={FadeInAnimation('up', 'tween', 0.2, 1)}
+        className="services-container main-container main-grid">
         <div className="services-content dark:bg-transparent dark:border-[#fff] dark:border-[1px]">
           <div>
             <h3 className="services-title dark:text-[#fff]">
@@ -87,7 +98,7 @@ const Services = () => {
                 <li className="services-modal-service">
                   < BsPatchCheck className='services-modal-icon dark:text-gray-300' />
                   <p className="services-modal-info dark:text-gray-300">
-                  I implement algorithms and solve system related problems.
+                    I implement algorithms and solve system related problems.
                   </p>
                 </li>
                 <li className="services-modal-service">
@@ -148,8 +159,8 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
 }
 

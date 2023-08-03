@@ -123,7 +123,6 @@ export const TextVariant2 = {
     transition: {
       type: 'tween',
       ease: 'easeIn',
-      delay: 1,
     },
   },
 };

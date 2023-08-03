@@ -1,4 +1,8 @@
 import React, { useState } from 'react'
+import { motion } from "framer-motion";
+
+import { FadeInAnimation, StaggerContainer } from '../../Utilities/Motion/Motion';
+import { TitleText, TypingText } from '../Index';
 import { FaUserGraduate } from "react-icons/fa"
 import { TbBriefcase } from "react-icons/tb"
 import { BsCalendar3 } from "react-icons/bs"
@@ -12,10 +16,21 @@ const Qualification = () => {
 
     return (
         <div>
-            <section className="qualification main-section">
-                <h2 className="section-title dark:text-[#fff]">Qualification</h2>
-                <span className="section-subtitle dark:text-gray-400">Abdul-Quayyum's personel journey</span>
-                <div className="qualification-container main-container">
+            <motion.section
+                initial="hidden"
+                variants={StaggerContainer}
+                viewport={{ once: false, amount: 0.25 }}
+                whileInView="show"
+                className="qualification main-section">
+                <TitleText
+                    title="Qualifications"
+                    textStyles="section-title dark:text-[#fff]" />
+                <TypingText
+                    title="Abdul-Quayyum's personel journey"
+                    textStyles="section-subtitle dark:text-gray-400" />
+                <motion.div
+                    variants={FadeInAnimation('up', 'tween', 0.2, 1)}
+                    className="qualification-container main-container">
                     <div className="qualification-tabs">
                         <div
                             className={toggle === 1 ? "qualification-button qualification-active dark:hover:text-gray-400 dark:text-[#fff] button-flex" : "qualification-button button-flex dark:hover:text-gray-400"}
@@ -59,7 +74,7 @@ const Qualification = () => {
                                     <span className="qualification-subtitle dark:text-[#fff]">University of ilorin</span>
                                     <div className=" dark:text-gray-400">
                                         < BsCalendar3 style={{ marginRight: "5px" }} />
-                                     June 2021 - Present
+                                        June 2021 - Present
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +84,7 @@ const Qualification = () => {
                                     <span className="qualification-subtitle dark:text-[#fff]">Learning and practicing.</span>
                                     <div className=" dark:text-gray-400">
                                         < BsCalendar3 style={{ marginRight: "5px" }} />
-                                         Dec 2020 - Present
+                                        Dec 2020 - Present
                                     </div>
                                 </div>
                                 <div>
@@ -154,8 +169,8 @@ const Qualification = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </motion.div>
+            </motion.section>
         </div>
     )
 }

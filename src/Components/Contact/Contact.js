@@ -1,4 +1,5 @@
-import React, { useRef} from 'react'
+import React, { useRef } from 'react'
+import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser'
 import cogoToast from 'cogo-toast'
 import { FaHandPointRight } from "react-icons/fa"
@@ -6,6 +7,9 @@ import { SiGmail } from "react-icons/si"
 import { BsLinkedin, BsWhatsapp } from "react-icons/bs"
 // import useForm from '../Validations/useForm'
 // import validate from '../Validations/Validator'
+
+import { FadeInAnimation, StaggerContainer } from '../../Utilities/Motion/Motion';
+import { TitleText, TypingText } from '../Index';
 import { useForm, validate } from "../Validations/Index"
 
 const Contact = (props) => {
@@ -39,11 +43,16 @@ const Contact = (props) => {
   } = useForm(sendEmail, validate)
 
   return (
-    <section className="contact main-section" id="Contact">
-      <h2 className="section-title dark:text-[#fff]">Contact me</h2>
-      <span className="section-subtitle dark:text-gray-400">Impressed or have feedbacks? send me a message</span>
-
-      <div className="contact-container main-container main-grid">
+    <motion.section className="contact main-section" id="Contact">
+      <TitleText
+        title="Contact Me"
+        textStyles="section-title dark:text-[#fff]" />
+      <TypingText
+        title="Impressed or have feedbacks? send me a message"
+        textStyles="section-subtitle dark:text-gray-400" />
+      <motion.div
+        variants={FadeInAnimation('up', 'tween', 0.2, 1)}
+        className="contact-container main-container main-grid">
         <div className="contact-content">
           <h3 className="contact-title dark:text-gray-300">Let's have a conversation </h3>
           <div className="contact-info">
@@ -51,7 +60,7 @@ const Contact = (props) => {
               < SiGmail className='contact-card-icon dark:text-[#fff]' />
               <h3 className="contact-card-title dark:text-gray-200">Email</h3>
               <span className="contact-card-data dark:text-gray-300">alaoabdulquayyumm@gmail.com</span>
-              <a href="mailto:alaoabdulquayyumm@gmail.com" target="_blank" rel="noreferrer"  className="contact-button dark:text-[#fff]">
+              <a href="mailto:alaoabdulquayyumm@gmail.com" target="_blank" rel="noreferrer" className="contact-button dark:text-[#fff]">
                 Contact me {" "} < FaHandPointRight className='contact-button-icon dark:text-[#fff]' />
               </a>
             </div>
@@ -59,7 +68,7 @@ const Contact = (props) => {
               < BsWhatsapp className='contact-card-icon dark:text-[#fff]' />
               <h3 className="contact-card-title dark:text-gray-200">Whatsapp</h3>
               <span className="contact-card-data dark:text-gray-300">+234 807 859 5073</span>
-              <a href="https://api.whatsapp.com/send?phone=2348078595073&text=Heyy Abdul-Quayyum, I am" target="_blank" rel="noreferrer"  className="contact-button dark:text-[#fff]">
+              <a href="https://api.whatsapp.com/send?phone=2348078595073&text=Heyy Abdul-Quayyum, I am" target="_blank" rel="noreferrer" className="contact-button dark:text-[#fff]">
                 Contact me {" "} < FaHandPointRight className='contact-button-icon dark:text-[#fff]' />
               </a>
             </div>
@@ -67,7 +76,7 @@ const Contact = (props) => {
               < BsLinkedin className='contact-card-icon dark:text-[#fff]' />
               <h3 className="contact-card-title dark:text-gray-200">LinkedIn</h3>
               <span className="contact-card-data dark:text-gray-300">Abdul-Quayym Alao</span>
-              <a href="https://www.linkedin.com/in/alao-abdul-quayyum-982492218/message" target="_blank" rel="noreferrer"  className="contact-button dark:text-[#fff]">
+              <a href="https://www.linkedin.com/in/alao-abdul-quayyum-982492218/message" target="_blank" rel="noreferrer" className="contact-button dark:text-[#fff]">
                 Contact me {" "} < FaHandPointRight className='contact-button-icon dark:text-[#fff]' />
               </a>
             </div>
@@ -81,8 +90,8 @@ const Contact = (props) => {
               <input
                 type="text"
                 name='visitorName'
-                onChange={handleChange} 
-                value={values.visitorName || ''} 
+                onChange={handleChange}
+                value={values.visitorName || ''}
                 // required 
                 // className="contact-form-input dark:bg-transparent dark:border-[#fff] dark:border-[1px]"
                 className={`contact-form-input dark:bg-transparent dark:border-[#fff] dark:border-[1px] input ${errors.visitorName && 'is-danger'}`}
@@ -96,8 +105,8 @@ const Contact = (props) => {
               <input
                 type="email"
                 name='visitorEmail'
-                onChange={handleChange} 
-                value={values.visitorEmail || ''} 
+                onChange={handleChange}
+                value={values.visitorEmail || ''}
                 // required 
                 // className="contact-form-input dark:bg-transparent dark:border-[#fff] dark:border-[1px]"
                 className={`contact-form-input dark:bg-transparent dark:border-[#fff] dark:border-[1px] input ${errors.visitorEmail && 'is-danger'}`}
@@ -113,8 +122,8 @@ const Contact = (props) => {
                 id=""
                 cols="30"
                 rows="10"
-                onChange={handleChange} 
-                value={values.visitorMessage || ''} 
+                onChange={handleChange}
+                value={values.visitorMessage || ''}
                 // required 
                 // className='contact-form-input dark:bg-transparent dark:border-[#fff] dark:border-[1px]'
                 className={`contact-form-input dark:bg-transparent dark:border-[#fff] dark:border-[1px] input ${errors.visitorMessage && 'is-danger'}`}
@@ -145,8 +154,8 @@ const Contact = (props) => {
             </button>
           </form>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
 }
 
