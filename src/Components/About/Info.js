@@ -7,7 +7,7 @@ const Info = () => {
         <div className="about-box dark:bg-transparent dark:border-[#fff] dark:border-[1px]">
             < BsAward className='about-icon dark:text-[#fff]'/>
             <h3 className="about-title dark:text-[#fff]">Experience</h3>
-            <span className="about-subtitle dark:text-[#fff]">2 Years+</span>
+            <span className="about-subtitle dark:text-[#fff]">3 Years+</span>
         </div>
         <div className="about-box dark:bg-transparent dark:border-[#fff] dark:border-[1px]">
             < BsBriefcase className="about-icon dark:text-[#fff]"/>

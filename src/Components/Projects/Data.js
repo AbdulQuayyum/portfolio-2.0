@@ -1,6 +1,6 @@
-import {auth, cat, catfact, catquiz, chatapp, course, imggen, landing, nftapp, pollution, softcodehelper, softgames, softmedia, softmediav2, softproperties, softtours, uni, weather, } from "../../Assets/Index"
+import { cat, catfact, catquiz, chatapp, imggen, job, landing, nftapp, pollution, portal, softcodehelper, softgames, softmedia, softmediav2, softtours, tour, video, weather, } from "../../Assets/Index"
 
-import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiSass, SiReact, SiMui, SiNextdotjs, SiMongodb, SiExpo, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiFirebase, SiDart, SiFlutter } from "react-icons/si"
+import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiSass, SiReact, SiNextdotjs, SiMongodb, SiExpo, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiFirebase, SiDart, SiFlutter } from "react-icons/si"
 import { TbBrandReactNative } from "react-icons/tb"
 import { ImGoogle } from "react-icons/im"
 export const projectsData = [
@@ -37,6 +37,19 @@ export const projectsData = [
         ]
     },
     {
+        id: 17,
+        image: portal,
+        name: "Soft Portal",
+        category: "Frontend",
+        githubUrl: "https://github.com/AbdulQuayyum/project-3d-03.git",
+        project: "https://project-3d-03.vercel.app/",
+        description: "A 3D website displaying a Floating Island with a portal door.",
+        tech: [
+            < SiJavascript />,
+            < SiReact />,
+        ]
+    },
+    {
         id: 3,
         image: softtours,
         name: "A Tour Guide Site",
@@ -66,6 +79,23 @@ export const projectsData = [
         ]
     },
     {
+        id: 7,
+        image: video,
+        name: "Soft Video Share",
+        category: "Full Stack",
+        githubUrl: "https://github.com/AbdulQuayyum/project-video-app.git",
+        project: "https://project-video-app.vercel.app/",
+        description: "A Web Application for video calling",
+        tech: [
+            < SiJavascript />,
+            < SiReact />,
+            < SiVite />,
+            < SiTailwindcss />,
+            < SiNodedotjs />,
+            < SiExpress />,
+        ]
+    },
+    {
         id: 5,
         image: softmedia,
         name: "Soft Media",
@@ -92,23 +122,6 @@ export const projectsData = [
             < SiNextdotjs />,
             < SiJavascript />,
             < ImGoogle />
-        ]
-    },
-    {
-        id: 7,
-        image: softproperties,
-        name: "Soft Properties",
-        category: "Full Stack",
-        githubUrl: "https://github.com/AbdulQuayyum/soft-properties",
-        project: "https://soft-properties.vercel.app/",
-        description: "A Real Estate Properties dashboard using Refine, React, Typescript, Apex Charts, mui for the frontend and Cloudinary, cors, Express and MONGO DB",
-        tech: [
-            < SiJavascript />,
-            < SiTypescript />,
-            < SiReact />,
-            < SiMui />,
-            < SiExpress />,
-            < SiMongodb />,
         ]
     },
     {
@@ -192,6 +205,34 @@ export const projectsData = [
         ]
     },
     {
+        id: 16,
+        image: tour,
+        name: "Travel Goals App",
+        category: "Mobile",
+        githubUrl: "https://github.com/AbdulQuayyum/mytravelgoals",
+        project: "https://github.com/AbdulQuayyum/mytravelgoals",
+        description: "A Cross Platform Application showing some Tourist Attractions in Nigeria.",
+        tech: [
+            < SiDart />,
+            < SiFlutter />,
+        ]
+    },
+    {
+        id: 17,
+        image: job,
+        name: "Job Finder App",
+        category: "Mobile",
+        githubUrl: "https://github.com/AbdulQuayyum/soft-jobs.git",
+        project: "https://expo.dev/@quayyum/soft-jobs?serviceType=classic&dist",
+        description: "A Cross Platform Application for Job Finders",
+        tech: [
+            < SiJavascript />,
+            < TbBrandReactNative />,
+            < SiFirebase />,
+            < SiExpo />,
+        ]
+    },
+    {
         id: 13,
         image: chatapp,
         name: "Chat App",
@@ -213,7 +254,7 @@ export const projectsData = [
         category: "Mobile",
         githubUrl: "https://github.com/AbdulQuayyum/React-Native-NFT-App.git",
         project: "https://github.com/AbdulQuayyum/React-Native-NFT-App.git",
-        description: "A NFT mobile application using React Native, Expo and other dependencies.",
+        description: "A NFT cross platoform application using React Native, Expo and other dependencies.",
         tech: [
             < SiJavascript />,
             < TbBrandReactNative />,
@@ -227,7 +268,7 @@ export const projectsData = [
         category: "Mobile",
         githubUrl: "https://github.com/AbdulQuayyum/weather_app.git",
         project: "https://github.com/AbdulQuayyum/weather_app.git",
-        description: "A Weather mobile application using Flutter, Dart and other dependencies.",
+        description: "A Weather cross platform application using Flutter, Dart and other dependencies.",
         tech: [
             < SiDart />,
             < SiFlutter />,
