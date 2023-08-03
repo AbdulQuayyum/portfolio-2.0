@@ -2,19 +2,27 @@ import React from 'react'
 import { motion } from "framer-motion";
 
 import { FadeInAnimation, StaggerContainer } from '../../Utilities/Motion/Motion';
+import { TitleText, TypingText } from '../Index';
 import resume from '../../Assets/Documents/resume.pdf'
 import Info from './Info'
 
 const About = () => {
   return (
-    <section className='about main-section' id="About">
-      <h2 className="section-title dark:text-[#fff]">
-        About Me
-      </h2>
-      <span className="section-subtitle dark:text-gray-400">
-        Who is Abdul-Quayyum?
-      </span>
-      <div className="about-container main-container main-grid">
+    <motion.section
+      initial="hidden"
+      variants={StaggerContainer}
+      viewport={{ once: false, amount: 0.25 }}
+      whileInView="show"
+      className='about main-section' id="About">
+      <TitleText
+        title="About"
+        textStyles="section-title dark:text-[#fff]" />
+      <TypingText
+        title="Who is Abdul-Quayyum?"
+        textStyles="section-subtitle dark:text-gray-400" />
+      <motion.div
+        variants={FadeInAnimation('up', 'tween', 0.2, 1)}
+        className="about-container main-container main-grid">
         <div className="home-img"></div>
         {/* <img src={profile} alt="..." className='about-img' /> */}
         <div className="about-data">
@@ -51,8 +59,8 @@ const About = () => {
             </svg>
           </a>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
 }
 

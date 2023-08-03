@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 
-import { SlideInAnimation, StaggerContainer } from '../../Utilities/Motion/Motion';
+import { FadeInAnimation, StaggerContainer } from '../../Utilities/Motion/Motion';
 import Data from './Data'
 import gig from "../../Assets/Images/gig.png"
 
@@ -14,7 +14,7 @@ const Home = () => {
             viewport={{ once: false, amount: 0.25 }}
             whileInView="show">
             <motion.section
-                variants={SlideInAnimation("right", "tween", 0.2, 1)}
+                variants={FadeInAnimation('up', 'tween', 0.2, 1)}
                 className="home main-section" id="Home">
                 <div className="home-container main-container main-grid">
                     <div className="home-content main-grid">

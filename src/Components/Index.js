@@ -2,6 +2,8 @@ import About from "./About/About"
 import { AnalyticsWrapper } from "./Analytics/Analytics"
 import BackToTop from "./BackToTop/BackToTop"
 import Contact from "./Contact/Contact"
+import { TypingText } from "./CustomTexts/CustomTexts"
+import { TitleText } from "./CustomTexts/CustomTexts"
 import Footer from "./Footer/Footer"
 import Header from "./Header/Header"
 import Home from "./Home/Home"
@@ -25,5 +27,7 @@ export {
     Qualification,
     Services,
     Skills,
-    Testimonials
+    Testimonials,
+    TypingText,
+    TitleText
 }
