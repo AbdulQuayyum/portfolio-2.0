@@ -1,11 +1,9 @@
 // Images
 import ahmid from "./Images/ahmid.jpeg"
-import auth from "./Images/auth.png"
 import cat from "./Images/cat.png"
 import catfact from "./Images/catfact.png"
 import catquiz from "./Images/catquiz.png"
 import chatapp from "./Images/chatapp.jpg"
-import course from "./Images/course.png"
 import gig from "./Images/gig.png"
 import imggen from "./Images/img-gen.png"
 import kiki from "./Images/kiki.png"
@@ -24,7 +22,6 @@ import softmediav2 from "./Images/softmediav2.png"
 import softproperties from "./Images/softproperties.png"
 import softtours from "./Images/softtours.png"
 import surdykbaba from "./Images/surdykbaba.png"
-import uni from "./Images/uni.png"
 import weather from "./Images/weather.png"
 import yusufuabu from "./Images/yusufuabu.png"
 
@@ -33,12 +30,10 @@ import resume from "./Documents/resume.pdf"
 
 export {
     ahmid,
-    auth,
     cat,
     catfact,
     catquiz,
     chatapp,
-    course,
     gig,
     imggen,
     kiki,
@@ -57,7 +52,6 @@ export {
     softproperties,
     softtours,
     surdykbaba,
-    uni,
     weather,
     yusufuabu,
     resume,
