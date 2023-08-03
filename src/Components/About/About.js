@@ -1,4 +1,7 @@
 import React from 'react'
+import { motion } from "framer-motion";
+
+import { FadeInAnimation, StaggerContainer } from '../../Utilities/Motion/Motion';
 import resume from '../../Assets/Documents/resume.pdf'
 import Info from './Info'
 

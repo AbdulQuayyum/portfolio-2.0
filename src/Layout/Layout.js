@@ -16,7 +16,9 @@ export default function Layout(props) {
     const { children } = props
     return (
         <>
-            <Header />
+            <header className='flex justify-center w-full'>
+                <Header />
+            </header>
             <main className="main">
                 <Home />
                 <About />
@@ -27,8 +29,8 @@ export default function Layout(props) {
                 <Testimonials />
                 <Contact />
             </main>
-                <Footer />
-                <BackToTop />
+            <Footer />
+            <BackToTop />
             {children}
         </>
     )
