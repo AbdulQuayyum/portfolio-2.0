@@ -2,6 +2,8 @@
 import ahmid from "./Images/ahmid.jpeg"
 import auth from "./Images/auth.png"
 import cat from "./Images/cat.png"
+import catfact from "./Images/catfact.png"
+import catquiz from "./Images/catquiz.png"
 import chatapp from "./Images/chatapp.jpg"
 import course from "./Images/course.png"
 import gig from "./Images/gig.png"
@@ -14,6 +16,7 @@ import mohmusa from "./Images/mohmusa.png"
 import muhees from "./Images/muhees.png"
 import nftapp from "./Images/nftapp.jpg"
 import nike from "./Images/nike.png"
+import pollution from "./Images/pollution.png"
 import softcodehelper from "./Images/softcodehelper.png"
 import softgames from "./Images/softgames.png"
 import softmedia from "./Images/softmedia.png"
@@ -32,6 +35,8 @@ export {
     ahmid,
     auth,
     cat,
+    catfact,
+    catquiz,
     chatapp,
     course,
     gig,
@@ -44,6 +49,7 @@ export {
     muhees,
     nftapp,
     nike,
+    pollution,
     softcodehelper,
     softgames,
     softmedia,

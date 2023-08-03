@@ -1,4 +1,4 @@
-import {auth, cat, chatapp, course, imggen, landing, nftapp, softcodehelper, softgames, softmedia, softmediav2, softproperties, softtours, uni, weather, } from "../../Assets/Index"
+import {auth, cat, catfact, catquiz, chatapp, course, imggen, landing, nftapp, pollution, softcodehelper, softgames, softmedia, softmediav2, softproperties, softtours, uni, weather, } from "../../Assets/Index"
 
 import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiSass, SiReact, SiMui, SiNextdotjs, SiMongodb, SiExpo, SiNodedotjs, SiExpress, SiSupabase, SiVite, SiOpenai, SiFramer, SiFirebase, SiDart, SiFlutter } from "react-icons/si"
 import { TbBrandReactNative } from "react-icons/tb"
@@ -150,42 +150,40 @@ export const projectsData = [
     },
     {
         id: 10,
-        image: auth,
-        name: "Authentication API",
+        image: pollution,
+        name: "Pollution News API",
         category: "Backend",
-        githubUrl: "https://github.com/AbdulQuayyum/Authentication-API",
-        project: "https://github.com/AbdulQuayyum/Authentication-API",
-        description: "An authentication API service.",
+        githubUrl: "https://github.com/AbdulQuayyum/pollution-news-api.git",
+        project: "https://rapidapi.com/AbdulQuayyum/api/pollution-news-api/",
+        description: "An API service returning news articles about pollution in african countries. Try using another project of mine to summarize the articles",
         tech: [
             < SiJavascript />,
             < SiNodedotjs />,
-            < SiExpress />,
-            < SiMongodb />,
+            < SiExpress />
         ]
     },
     {
         id: 11,
-        image: course,
-        name: "Course API",
+        image: catfact,
+        name: "Cat Facts API",
         category: "Backend",
-        githubUrl: "https://github.com/AbdulQuayyum/course-api.git",
-        project: "https://github.com/AbdulQuayyum/course-api.git",
-        description: "An API service to group the courses I am offering in school.",
+        githubUrl: "https://github.com/AbdulQuayyum/random-cat-facts/tree/Source/Server",
+        project: "https://rapidapi.com/AbdulQuayyum/api/cat-facts12/",
+        description: "An API Service providing random facts about cats",
         tech: [
             < SiJavascript />,
             < SiNodedotjs />,
-            < SiExpress />,
-            < SiMongodb />,
+            < SiExpress />
         ]
     },
     {
         id: 12,
-        image: uni,
-        name: "University API",
+        image: catquiz,
+        name: "Cat Quiz API",
         category: "Backend",
-        githubUrl: "https://github.com/AbdulQuayyum/university-api.git",
-        project: "https://github.com/AbdulQuayyum/university-api.git",
-        description: "An API service to group some selected universities and more informations.",
+        githubUrl: "https://github.com/AbdulQuayyum/soft-cat-quiz/tree/Source/Server",
+        project: "https://rapidapi.com/AbdulQuayyum/api/soft-cat-quiz/",
+        description: "An API service returning A about cats.",
         tech: [
             < SiJavascript />,
             < SiNodedotjs />,
