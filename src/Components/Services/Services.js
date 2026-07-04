@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
 import { motion } from "framer-motion";
+import { useState } from 'react';
 
+import { AiOutlineQrcode } from "react-icons/ai";
+import { BsPatchCheck } from "react-icons/bs";
+import { FaHandPointRight } from "react-icons/fa";
+import { HiCode, HiOutlineDatabase } from "react-icons/hi";
+import { MdCloseFullscreen } from "react-icons/md";
 import { FadeInAnimation, StaggerContainer } from '../../Utilities/Motion/Motion';
 import { TitleText, TypingText } from '../Index';
-import { HiCode } from "react-icons/hi"
-import { MdCloseFullscreen } from "react-icons/md"
-import { FaHandPointRight } from "react-icons/fa"
-import { BsPatchCheck } from "react-icons/bs"
-import { HiOutlineDatabase } from "react-icons/hi"
-import { AiOutlineQrcode } from "react-icons/ai"
 
 const Services = () => {
   const [toggle, setToggle] = useState(0)
+  const currentYear = new Date().getFullYear();
+  const frontendExperience = currentYear - 2021;
+  const backendExperience = currentYear - 2022;
+  const mobileExperience = currentYear - 2022;
 
   const toggleTab = (index) => {
     setToggle(index)
@@ -50,7 +53,7 @@ const Services = () => {
                 Frontend Engineer
               </h3>
               <p className="services-modal-description dark:text-[#fff]">
-                Providing quality service for clients and companies, with more than 2 years of experience
+                Providing quality service for clients and companies, with more than {frontendExperience} years of experience
               </p>
               <ul className="services-modal-services main-grid">
                 <li className="services-modal-service">
@@ -92,7 +95,7 @@ const Services = () => {
                 Backend Engineer
               </h3>
               <p className="services-modal-description dark:text-[#fff]">
-                Providing quality service for clients and companies, with more than 1 year of experience
+                Providing quality service for clients and companies, with more than {backendExperience} year{backendExperience > 1 ? 's' : ''} of experience
               </p>
               <ul className="services-modal-services main-grid">
                 <li className="services-modal-service">
@@ -134,7 +137,7 @@ const Services = () => {
                 Mobile Engineer
               </h3>
               <p className="services-modal-description dark:text-[#fff]">
-                Providing quality service for clients and companies, with nearly 1 year of experience
+                Providing quality service for clients and companies, with nearly {mobileExperience} year{mobileExperience > 1 ? 's' : ''} of experience
               </p>
               <ul className="services-modal-services main-grid">
                 <li className="services-modal-service">
