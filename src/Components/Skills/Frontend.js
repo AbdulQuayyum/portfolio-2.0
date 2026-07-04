@@ -1,5 +1,4 @@
-import React from 'react'
-import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiThreedotjs, SiReact, SiNextdotjs, SiVuedotjs, SiAngular, SiBootstrap, SiJquery, SiAngularjs } from "react-icons/si"
+import { SiAngularjs, SiBootstrap, SiCss3, SiHtml5, SiJavascript, SiJquery, SiNextdotjs, SiReact, SiTailwindcss, SiThreedotjs, SiTypescript, SiVuedotjs } from "react-icons/si"
 
 // import { FrontendSkills } from './Data'
 

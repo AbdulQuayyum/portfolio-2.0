@@ -1,9 +1,8 @@
-import React from 'react'
 import { motion } from "framer-motion";
 
-import { StaggerContainer } from '../../Utilities/Motion/Motion';
+// import { StaggerContainer } from '../../Utilities/Motion/Motion';
 import { TitleText, TypingText } from '../Index';
-import Projects from './Projects'
+import Projects from './Projects';
 
 const Project = () => {
   return (
